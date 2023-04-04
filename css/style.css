@@ -6,7 +6,7 @@ Secondary Color (Gray Black): #333333;
 body {
     background-color:#fcfaf7;
     font-family: 'EB Garamond', serif;
-    font-size: 17px; /* Sets the font size to 16px */
+    font-size: 18px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
     color: #4a4a4a;
@@ -26,13 +26,84 @@ h2 {
   }
   
 h3 {
-    font-size: 1.45em;
+    font-size: 1.7em;
     font-weight: 400;
   }
 h4 {
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 400;
   }
 img {
     width: 100%;
   }  
+a {
+    color: #333333;
+    text-decoration: none; /* No underlining */
+  }
+/* a:hover,
+a:focus {
+    color: #fcfaf7;
+    text-decoration: line-through;
+  } 
+a:active { /* selected link 
+    color: #994c30;} */
+
+.button {
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #fcfaf7;
+    text-transform: uppercase;
+    color: #333333; /* needed to override the default link color */
+    border-style: solid;
+    border-color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 3.5px;
+    transition: 0.2s opacity;
+  }
+.button:hover {
+    text-decoration: none;
+    background-color: #333333;
+    color: #fcfaf7;
+  }
+.button:active {
+  color: #333333;
+}
+
+.button-about{
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #333333;
+  text-transform: uppercase;
+  color: #fcfaf7;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px;
+  padding-left: 45px;
+  padding-right: 45px;
+  border-radius: 3.5px;
+  transition: 0.2s opacity;
+}
+
+.button-about:hover {
+  background-color: #fcfaf7;
+  color: #333333; /* needed to override the default link color */
+  border-style: solid;
+  border-color: #333333;
+}
+.button-about:active {
+color: #333333;
+}
+
+.contact-links{
+  text-decoration: underline;
+}
+
+.contact-links:hover,
+.contact-links:focus {
+    text-decoration: line-through;
+    font-style: italic;
+  } 
+.contact-links:active { /* selected link */
+  text-decoration: line-through;
+  font-style: italic;
+  }
