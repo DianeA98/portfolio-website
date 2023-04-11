@@ -215,18 +215,7 @@ main {
   bottom: 3px;
 }
 
-.linkedin > ul > li > a:hover {
-  background-image: url('/img/4362947_in_linkedin_logo_social\ media_icon.svg');
-}
-
-.linkedin > ul > li > a:visited {
-  background-image: url('/img/4362947_in_linkedin_logo_social\ media_icon.svg');
-}
-
-.behance > ul > li > a:hover {
-  background-image: url('/img/1820491_behance_brand_logo_network_social_icon.svg');
-}
-
-.behance > ul > li > a:visited {
-  background-image: url('/img/1820491_behance_brand_logo_network_social_icon.svg');
+#social > ul > li > a:visited {
+  position: relative;
+  bottom: 3px;
 }
