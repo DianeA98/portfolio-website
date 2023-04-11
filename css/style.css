@@ -210,3 +210,23 @@ main {
   margin: 0 8px;
 }
 
+#social > ul > li > a:hover {
+  position: relative;
+  bottom: 3px;
+}
+
+.linkedin > :hover{
+  background-image: url('/img/4362947_in_linkedin_logo_social\ media_icon.svg');
+}
+
+.linkedin > :visited{
+  background-image: url('/img/4362947_in_linkedin_logo_social\ media_icon.svg');
+}
+
+.behance > :hover{
+  background-image: url('/img/1820491_behance_brand_logo_network_social_icon.svg');
+}
+
+.behance > :visited{
+  background-image: url('/img/1820491_behance_brand_logo_network_social_icon.svg');
+}
