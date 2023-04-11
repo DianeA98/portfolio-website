@@ -3,6 +3,12 @@ Primary Color (Floral White): #fcfaf7;
 Secondary Color (Gray Black): #333333;
 */
 
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+}
+
 * {
   box-sizing: border-box;
 }
