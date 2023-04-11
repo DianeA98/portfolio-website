@@ -191,3 +191,22 @@ nav > ul > li > a:visited {
 main {
   padding-top: 133px;
 }
+
+#contact{
+  text-align: center;
+}
+
+#social > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#social > ul > li {
+  display: inline-block;
+}
+
+#social > ul > li {
+  width: 30px;
+  margin: 0 8px;
+}
+
