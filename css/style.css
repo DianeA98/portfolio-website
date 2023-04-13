@@ -64,7 +64,7 @@ a:active { /* selected link
     font-weight: 500;
     padding: 10px;
     border-radius: 3.5px;
-    transition: 0.2s opacity;
+    transition-duration: 0.8s;
   }
 .button:hover {
     text-decoration: none;
@@ -86,7 +86,7 @@ a:active { /* selected link
   padding-left: 45px;
   padding-right: 45px;
   border-radius: 3.5px;
-  transition: 0.2s opacity;
+  transition-duration: 0.8s;
 }
 
 .button-about:hover {
@@ -225,6 +225,10 @@ ul{
   list-style-type: none;
 }
 
+#footer{
+  text-align: center;
+}
+
 
 /* ==============================
 Medium devices (640px and larger)
@@ -277,9 +281,19 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-}
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
+  .col-lg-7{
+    width: 58.33%;
+    float: left;
+  }
+
+  .col-lg-5{
+    width: 41.66%;
+    float: left;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
