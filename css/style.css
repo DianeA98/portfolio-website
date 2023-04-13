@@ -27,6 +27,7 @@ h1 {
 h2 {
     font-size: 2em;
     font-weight: 700;
+    text-align: center;
   }
   
 h3 {
@@ -220,6 +221,10 @@ main {
   bottom: 3px;
 }
 
+ul{
+  list-style-type: none;
+}
+
 
 /* ==============================
 Medium devices (640px and larger)
@@ -244,14 +249,30 @@ Medium devices (640px and larger)
     display: block;
   }
 
-  .col-md-6 {
+  [class*="col-"] {
     width: 50%;
+    float: left;
+    padding: 10px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
   }
 
-  [class*="col-"] {
-    float: left;
+  #about h3{
+    margin-top: 0;
+  }
+
+  #skills > ul > li{
+    margin: 0 0 0 -38px;
+  }
+
+  #tools > ul > li{
+    margin: 0 0 0 -38px;
   }
 }
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
