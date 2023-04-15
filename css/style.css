@@ -20,7 +20,7 @@ h1, h2, h3, h4 {
     line-height: 1.4;
   }
 h1 {
-    font-size: 2em;
+    font-size: 2.7em;
     font-weight: 700;
   }
   
@@ -40,7 +40,10 @@ h4 {
   }
 img {
     width: 100%;
-  }  
+  }
+p {
+  font-size: 1.1em;
+} 
 a {
     color: #333333;
     text-decoration: none; /* No underlining */
@@ -63,6 +66,7 @@ a:active { /* selected link
     font-size: 16px;
     font-weight: 500;
     padding: 10px;
+    margin-top: 10px;
     border-radius: 3.5px;
     transition-duration: 0.8s;
   }
@@ -83,6 +87,7 @@ a:active { /* selected link
   font-size: 16px;
   font-weight: 500;
   padding: 10px;
+  margin-top: 10px;
   padding-left: 45px;
   padding-right: 45px;
   border-radius: 3.5px;
@@ -194,12 +199,17 @@ main {
 }
 
 #aboutpicture{
-  width: 1em;
+  width: 18em;
+  display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 50%;
 }
 
-#contact{
+footer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
@@ -229,11 +239,6 @@ main {
 
 ul{
   list-style-type: none;
-}
-
-
-#footer{
-  text-align: center;
 }
 
 #cssanimation{
