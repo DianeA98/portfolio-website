@@ -200,13 +200,11 @@ main {
 #social > ul {
   list-style-type: none;
   padding: 0;
+  transition-property: opacity;
 }
 
 #social > ul > li {
   display: inline-block;
-}
-
-#social > ul > li {
   width: 30px;
   margin: 0 8px;
 }
@@ -214,11 +212,13 @@ main {
 #social > ul > li > a:hover {
   position: relative;
   bottom: 3px;
+  opacity: 0.8;
 }
 
 #social > ul > li > a:visited {
   position: relative;
   bottom: 3px;
+  opacity: 0.8;
 }
 
 ul{
