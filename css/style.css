@@ -229,6 +229,12 @@ ul{
   text-align: center;
 }
 
+#cssanimation{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 
 /* ==============================
 Medium devices (640px and larger)
