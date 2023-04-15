@@ -193,6 +193,12 @@ main {
   padding-top: 133px;
 }
 
+#aboutpicture{
+  max-width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #contact{
   text-align: center;
 }
@@ -225,6 +231,7 @@ ul{
   list-style-type: none;
 }
 
+
 #footer{
   text-align: center;
 }
@@ -235,6 +242,29 @@ ul{
   height: auto;
 }
 
+@keyframes earrings {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(1deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-1deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+.cls-1 {
+  animation:earrings 4s infinite linear;
+}
+
+/*
 @keyframes color-change {
   0% {fill: #edc655;}
   50% {fill: #fcffad;}
@@ -266,6 +296,7 @@ ul{
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
+*/
 
 /* ==============================
 Medium devices (640px and larger)
