@@ -125,6 +125,30 @@ selector {
     width: 1200px;
   }  
 
+.buttonr{
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #fcfaf7;
+    text-transform: uppercase;
+    color: #333333; /* needed to override the default link color */
+    border-style: solid;
+    border-color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 25px;
+    border-radius: 3.5px;
+    transition-duration: 0.8s;
+}  
+
+.buttonr:hover {
+  text-decoration: none;
+  background-color: #333333;
+  color: #fcfaf7;
+}
+.buttonr:active {
+color: #333333;
+}
+
 /* Layout styling */
 
 .container {
