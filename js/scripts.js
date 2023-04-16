@@ -1,1 +1,1 @@
-alert("Hello");
+console.log("Thanks for discovering my portfolio website.");
