@@ -167,7 +167,7 @@ color: #333333;
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
 
 header {
@@ -336,6 +336,10 @@ Medium devices (640px and larger)
   header {
     text-align: unset;
     padding: 20px 0 13px;
+  }
+
+  .logo {
+    max-width: 250px;
   }
 
   nav {
