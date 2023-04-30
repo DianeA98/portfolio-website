@@ -172,8 +172,7 @@ color: #333333;
 
 header {
   background-color: #fcfaf7;
-  text-align: center;
-  padding: 20px 0 5px;
+  padding: 10px 0 5px;
   /*start ------------*/
 	width: 100%; 
 	height: [object Object]px; 
@@ -188,10 +187,7 @@ header {
 nav > ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav > ul > li > a {
@@ -211,6 +207,36 @@ nav > ul > li > a:visited {
   font-style: italic;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: -2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
 #hero {
   background-color: #fcfaf7;
   padding: 10px 0;
@@ -219,7 +245,7 @@ nav > ul > li > a:visited {
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 56px;
 }
 
 #aboutpicture{
@@ -346,6 +372,22 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
     margin-top: -16px;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   main {
