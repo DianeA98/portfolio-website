@@ -248,6 +248,11 @@ main {
   padding-top: 56px;
 }
 
+video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 #aboutpicture{
   width: 18em;
   display: block;
