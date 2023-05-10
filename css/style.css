@@ -292,6 +292,10 @@ footer {
   opacity: 0.8;
 }
 
+.linkedin{
+  width: 30px;
+}
+
 ul{
   list-style-type: none;
 }
@@ -325,6 +329,12 @@ ul{
 .cls-1 {
   animation:earrings 4s infinite linear;
 }
+
+#contact{
+  background-color:#f4efea;
+  padding: 8px 0;
+}
+
 
 /*
 @keyframes color-change {
@@ -434,6 +444,7 @@ Large devices (1024px or larger)
   .col-lg-7{
     width: 58.33%;
     float: left;
+    text-align: left;
   }
 
   .col-lg-5{
@@ -445,5 +456,13 @@ Large devices (1024px or larger)
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 0;
+  }
+  
+  .navtoggle.responsive li  {
+    padding: 0;
   }
 }
