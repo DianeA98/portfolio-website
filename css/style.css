@@ -54,7 +54,7 @@ a:focus {
     text-decoration: line-through;
   } 
 a:active { /* selected link 
-    color: #994c30;} */
+    colosr: #994c30;} */
 
 .button {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
@@ -164,6 +164,8 @@ color: #333333;
 #hero h1 {
   text-align: center; /* Centers text */
   color: #333333;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .logo {
@@ -300,6 +302,13 @@ ul{
   list-style-type: none;
 }
 
+#contact{
+  background-color:#f4efea;
+  padding: 8px 0;
+}
+
+
+/*
 #cssanimation{
   width: 70%;
   max-width: 70%;
@@ -330,13 +339,7 @@ ul{
   animation:earrings 4s infinite linear;
 }
 
-#contact{
-  background-color:#f4efea;
-  padding: 8px 0;
-}
 
-
-/*
 @keyframes color-change {
   0% {fill: #edc655;}
   50% {fill: #fcffad;}
