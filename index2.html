@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
+    <link href="img/favicon.png" rel="icon" media="(prefers-color-scheme: light)">
+    <link href="img/favicon_darkmode.png" rel="icon" media="(prefers-color-scheme: dark)">
+    <title>Diane's Portfolio Website</title>
+    <script src="https://kit.fontawesome.com/ea23a61ece.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+   <header>
+    <div class="container"> 
+        <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html" class="logo">
+        <img src="img/portfolio-image.svg" style="max-width: 155px;" alt="logo"> 
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#work" onclick="menuToggle()">WORK</a></li>
+                <li><a href="#about" onclick="menuToggle()">ABOUT</a></li>
+                <li><a href="#contact" onclick="menuToggle()">CONTACT</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav></div>
+    </div>
+   </header>
+
+   <main>
+    <!--Hero Section-->
+    <div id="hero">
+     <div class="container">
+        <h1 style="font-size: 4em;">Hello, my name is Diane Adote<span> and I design/code beautiful things for the web.</span></h1>
+     </div>
+    </div>
+    <!--Hero Section Ends-->
+
+    <!--
+    <div id="work">
+     <div class="container">
+        <h2>My Work</h2>
+        <div class="row">
+            <div class="column col-md-6 col-lg-7">
+                <picture>
+                    <source srcset="img/reaulexco_hp1_600.jpg" media="(max-width:767px)">
+                    <img src="img/reaulexco_hp1_1200.jpg" alt="My Image">
+                </picture>
+            </div>
+            <div class="column col-md-6 col-lg-5">
+                <h3>Reaulex Co.</h3>
+                <p>This website was designed and coded for a Creative Director that wanted a website portfolio to display all of her work, s well as have a platform that explains her services and allow clients to book appointments.</p>
+                <a href="reaulexco.html" class="button">View Project</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column col-md-6 col-lg-7">
+                <picture>
+                    <source srcset="img/tyguysemer_hp2_600.jpg" media="(max-width:767px)">
+                    <img src="img/tyguysemer_hp2_1200.jpg" alt="My Image">
+                </picture>
+            </div>
+            <div class="column col-md-6 col-lg-5">
+                <h3>TY Guys Emergency Roadside</h3>
+                <p>A service website for a new business owner that provides roadside emergency services. The client wanted a website that will display his work, showcase the services that he provides, and include ways for clients to reach out to him.</p>
+                <a href="tyguysemer.html" class="button">View Project</a>
+            </div>
+        </div>
+     </div>    
+    </div>
+
+    <div id="about">
+       <div class="container"
+        <h2>About Me</h2>
+        <picture>
+            <source srcset="img/aboutpic_b.jpg" media="(max-width:767px)">
+            <img id="aboutpicture" src="img/aboutpic_a.jpg" alt="My Image">
+        </picture>
+        <div class="row">
+            <div class="col-lg-7">
+                <h2>My Story</h2>
+                <p>Based in Georgia, I&#39;m a Jr. Web Designer at Ballard Designs as well as a Graphic Designer and an aspiring
+                    Front-End Developer. I'm passionate about art, design, and fashion. I enjoy traveling, listening to music,
+                    and I speak three languages. I specialize in website design, HTML/CSS, UX/UI Design and graphic design.
+                </p>
+                <p>
+                    I started this journey when I was about to graduate from high school and couldn&#39;t figure out what major to choose.
+                    The tech world was interesting to me and I already loved art, so finding a major that combined the two was perfect.
+                    Up until now, I&#39;ve dabbled in a few things. From graphic design, some animation, web design, UX/UI, and even photography.
+                </p>    
+                <a href="files/new-resume.pdf" class="button-about" target="_blank">View My Resume</a>
+              <h3>Experience</h3>
+                <ul>
+                    <li>Degree in Visual Communication Design / Fashion Design Minor</li>
+                    <li>7 years experience in Digital Design, Graphic Design, &amp; Web Design</li>
+                </ul>
+            </div>
+            <div class="col-lg-5">
+                <h2>Skills &amp; Tools</h2>
+                <div class="col-md-6" id="skills">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>HTML &amp; CSS / JavaScript / UX/UI Design / Photography / Time Management / User Testing / Email Design / Multitasking / Web Design / Graphic Design </li>
+                    </ul>
+                </div>
+                <div class="col-md-6" id="tools">
+                    <h3>Tools I use</h3>
+                    <ul>
+                        <li>Visual Studio Code / Dreamweaver / Github / Photoshop / Illustrator / Figma / Adobe XD / InDesign / Wix
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br>
+       </div>
+    </div>
+    -->
+    </main>
+    <!--Footer Section-->
+    <footer id="contact">
+        <!-- <div class="container">
+         <h2>Contact</h2>
+         <h3>Hey, let's work together</h3>  
+         <p>Do you like what you see and want to discuss opportunities? Give me a <a href="tel:+12403169432" class="contact-links">call</a> or <a href="mailto:dianeadote@gmail.com" class="contact-links">send an email</a>.</p> 
+        </div> -->
+
+        <div class="container" id="social">
+            <ul>
+              <li><p class="footercopy" style="font-size: 0.8em;">Copyright Diane Adote | 2023</p></li>  
+              <li><a class="linkedin" href="https://www.linkedin.com/in/diane-adote-a9b074156" target="_blank" rel="noreferrer">
+                    <img src="img/linkedinlogoicon.svg" alt="linkedin logo"></a></li>
+            </ul>
+        </div>
+    </footer>
+    <!--Footer Section Ends-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+    crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script> var scroll = new SmoothScroll('a[href*="#"]', { speed: 700 }); </script>
+</body>
+</html>
