@@ -8,7 +8,7 @@ function menuToggle(){
     }
 }
 
-/*var content = 'Hello, my name is Diane Adote and I design/code beautiful things for the web.';
+var content = 'Hello, my name is Diane Adote and I design/code beautiful things for the web.';
 
 var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
 
@@ -19,4 +19,4 @@ $(ele).hide().appendTo('#hero h1').each(function (i) {
     }).animate({
         opacity: 1
     }, 100);
-});*/
+});
