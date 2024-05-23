@@ -420,9 +420,9 @@ Medium devices (640px and larger)
     padding-top: 99px;
   }
 
-  #hero{
+ /* #hero{
     padding: 10px 0 250px;
-  }
+  }*/
 
   #hero span {
     display: block;
