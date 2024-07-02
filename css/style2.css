@@ -1,0 +1,542 @@
+/* Colors used:
+Primary Color (Floral White): #fcfaf7;
+Secondary Color (Gray Black): #333333;
+Third Color (Gray Black): #F3F1EE;
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-color:#fcfaf7;
+    font-family: 'EB Garamond', serif;
+    font-size: 18px; /* Sets the font size to 16px */
+    font-weight: 300; /* Sets the font weight to 300 */
+    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+    color: #333333;
+  }
+  
+h1, h2, h3, h4 {
+    line-height: 1.4;
+  }
+  
+
+#hero h1 {
+    text-align: center; /* Centers text */
+    color: #333333;
+    font-size: 2.3em;
+    margin: 0;
+    padding-top: 40px;
+  }
+
+#hero h3 {
+  text-align: right;
+  padding-left: 28px;
+}  
+
+#hero a {
+  font-size: 1.3em;
+  padding-top: 20px;
+}
+
+.hero-arrow {
+  width: 45%;
+  display: block;
+  padding-top: 5px;
+}
+
+h1 {
+    font-size: 2.7em;
+    font-weight: 500;
+  }
+
+span {
+  font-style: italic;
+}
+  
+h2 {
+    font-size: 2em;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+h3 {
+    font-size: 1.6em;
+    font-weight: 400;
+  }
+  
+h4 {
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+
+
+.square {
+    /*position:;*/
+    margin: auto;
+    margin-top: -315px;
+    width: 285px;
+    height: 365px;
+    z-index: 2;
+    background-color:#F3F1EE;
+}
+
+img {
+    width: 100%;
+  }
+
+p {
+  font-size: 1.1em;
+} 
+
+a {
+    color: #333333;
+    text-decoration: none; /* No underlining */
+  }
+
+.italic{
+  font-style: italic;
+}
+
+
+/* a:hover,
+a:focus {
+    color: #fcfaf7;
+    text-decoration: line-through;
+  } 
+a:active { /* selected link 
+    colosr: #994c30;} */
+
+.button {
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #fcfaf7;
+    text-transform: uppercase;
+    color: #333333; /* needed to override the default link color */
+    border-style: solid;
+    border-color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 3.5px;
+    transition-duration: 0.8s;
+  }
+.button:hover {
+    text-decoration: none;
+    background-color: #333333;
+    color: #fcfaf7;
+  }
+.button:active {
+  color: #333333;
+}
+
+.button-about{
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #333333;
+  text-transform: uppercase;
+  color: #fcfaf7;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px;
+  margin-top: 10px;
+  padding-left: 45px;
+  padding-right: 45px;
+  border-radius: 3.5px;
+  transition-duration: 0.8s;
+}
+
+.button-about:hover {
+  background-color: #fcfaf7;
+  color: #333333; /* needed to override the default link color */
+  border-style: solid;
+  border-color: #333333;
+}
+.button-about:active {
+color: #333333;
+}
+
+.contact-links{
+  text-decoration: underline;
+}
+
+.contact-links:hover,
+.contact-links:focus {
+    text-decoration: line-through;
+    font-style: italic;
+  } 
+.contact-links:active { /* selected link */
+  text-decoration: line-through;
+  font-style: italic;
+  }
+
+selector {
+    margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+    position: relative;
+    float: right;
+    width: 1200px;
+  }  
+
+.buttonr{
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #fcfaf7;
+    text-transform: uppercase;
+    color: #333333; /* needed to override the default link color */
+    border-style: solid;
+    border-color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 25px;
+    border-radius: 3.5px;
+    transition-duration: 0.8s;
+}  
+
+.buttonr:hover {
+  text-decoration: none;
+  background-color: #333333;
+  color: #fcfaf7;
+}
+.buttonr:active {
+color: #333333;
+}
+
+/* Layout styling */
+
+.container {
+  padding: 0 20px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #333333; }
+
+
+.logo {
+  max-width: 150px;
+}
+
+header {
+  background-color: #fcfaf7;
+  padding: 10px 0 5px;
+  /*start ------------*/
+	width: 100%; 
+	background: #FCFAF7; 
+	border-bottom: solid #333333;
+	/*box-shadow: 0 15px 43px rgba(51, 51, 51, 0.1)  ; 
+	-webkit-box-shadow: 0 15px 43px rgba(51, 51, 51, 0.1)  ; 
+	-moz-box-shadow: 0 15px 43px rgba(51, 51, 51, 0.1)  ; */
+  position: fixed;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #333333;
+}
+
+nav > ul > li > a:hover {
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+nav > ul > li > a:visited {
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: -2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+#hero {
+  background-color: #fcfaf7;
+  padding: 10px 0 30px;
+  display: inline-block;
+  width: 100%;
+}
+
+main {
+  padding-top: 56px;
+  margin-bottom: 4em;
+}
+
+video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#aboutpicture{
+  width: 18em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+footer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#social > ul {
+  list-style-type: none;
+  padding: 0;
+  transition-property: opacity;
+}
+
+#social > ul > li {
+  display: inline-block;
+  margin: 0 8px;
+  margin-top: -5em;
+  margin-bottom: -1.5em;
+}
+
+#social > ul > li > a {
+  width: 20px;
+  display: inline-block;
+}
+
+#social > ul > li > a:hover {
+  position: relative;
+  bottom: 3px;
+  opacity: 0.8;
+}
+
+#social > ul > li > a:visited {
+  position: relative;
+  bottom: 3px;
+  opacity: 0.8;
+}
+
+.linkedin{
+  width: 20px;
+}
+
+
+ul{
+  list-style-type: none;
+}
+
+#contact{
+	background: #fcfaf7; 
+	border-top: solid #333333;
+  height: 55px;
+}
+
+/*
+#cssanimation{
+  width: 70%;
+  max-width: 70%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes earrings {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(1deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-1deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+.cls-1 {
+  animation:earrings 4s infinite linear;
+}
+
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+*/
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 540px) {
+  header {
+    text-align: unset;
+    height: 50px; 
+  }
+
+  .logo {
+    margin-top: 10px;
+    max-width: 250px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: -23px;
+  }
+
+  nav > ul {
+    margin: 1.2em 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  main {
+    padding-top: 99px;
+  }
+
+  #hero{
+    padding: 10px 0 250px;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  #social > ul > li {
+    margin-top: -5em;
+    margin-bottom: 0.5em;
+  }
+
+  footer{
+    height: 50px;
+  }
+
+  #contact{
+    padding-bottom: 3em;
+  }
+
+  [class*="col-"] {
+    width: 50%;
+    float: left;
+    padding: 10px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #about h3{
+    margin-top: 0;
+  }
+
+  #skills > ul > li{
+    margin: 0 0 0 -38px;
+  }
+
+  #tools > ul > li{
+    margin: 0 0 0 -38px;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-7{
+    width: 58.33%;
+    float: left;
+    text-align: left;
+  }
+
+  .col-lg-5{
+    width: 41.66%;
+    float: left;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 0;
+  }
+  
+  .navtoggle.responsive li  {
+    padding: 0;
+  }
+}

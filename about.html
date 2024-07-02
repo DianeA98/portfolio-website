@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
+    <link href="img/favicon.png" rel="icon" media="(prefers-color-scheme: light)">
+    <link href="img/favicon_darkmode.png" rel="icon" media="(prefers-color-scheme: dark)">
+    <title>About</title>
+    <script src="https://kit.fontawesome.com/ea23a61ece.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container"> 
+            <div class="navtoggle" id="myNavtoggle">
+            <a href="index.html" class="logo">
+            <img src="img/portfolio-image.svg" style="max-width: 155px;" alt="logo"> 
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#work" onclick="menuToggle()">WORK</a></li>
+                    <li><a href="#about" onclick="menuToggle()">ABOUT</a></li>
+                    <li><a href="#contact" onclick="menuToggle()">CONTACT</a></li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                </ul>
+            </nav></div>
+        </div>
+       </header>
+
+    <main><div id="about">
+        <div class="container">
+           <h2 style="text-align: left;">About Me</h2>
+         <div class="row">
+             <div class="col-lg-9">
+                 <h3>Based in Georgia, I&#39;m a <span class="italic">Web Designer/Digital Designer</span> and an aspiring
+                    <span class="italic">Front-End Developer</span>. I'm passionate about art, design, and fashion. I enjoy traveling, listening to music,
+                     and I speak three languages. I specialize in <span class="italic">website design, HTML/CSS,</span> and <span class="italic">graphic design</span>.
+                 </h3>
+                 <p>
+                     I started this journey when I was about to graduate from high school and couldn&#39;t figure out what major to choose.
+                     The tech world was interesting to me and I already loved art, so finding a major that combined the two was perfect.
+                     Up until now, I&#39;ve dabbled in a few things. From graphic design, some animation, web design, UX/UI, and even photography.
+                 </p>    
+                 <a href="files/new-resume.pdf" class="button-about" target="_blank">View My Resume</a>   
+             </div>
+             <picture class="col-lg-3">
+                <source srcset="img/aboutpic_b.jpg" media="(max-width:767px)">
+                <img id="aboutpicture" src="img/aboutpic_a.jpg" alt="My Image">
+            </picture> 
+         </div>
+         <br>
+         <div class="row">
+            <h3>Experience</h3>
+            <ul>
+                <li>Degree in Visual Communication Design / Fashion Design Minor</li>
+                <li>7 years experience in Digital Design, Graphic Design, &amp; Web Design</li>
+            </ul>
+
+            <h2>Skills &amp; Tools</h2>
+            <div class="col-md-4" id="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML &amp; CSS / JavaScript / UX/UI Design / Photography / Time Management / User Testing / Email Design / Multitasking / Web Design / Graphic Design </li>
+                </ul>
+            </div>
+            <div class="col-md-4" id="tools">
+                <h3>Tools I use</h3>
+                <ul>
+                    <li>Visual Studio Code / Dreamweaver / Github / Photoshop / Illustrator / Figma / Adobe XD / InDesign / Wix
+                    </li>
+                </ul>
+            </div>
+         </div>
+        </div>
+     </div>  
+    </main>   
+</body>
+
+<!--Footer Section-->
+<footer id="contact">
+    <div class="container" id="social">
+        <ul>
+          <li><p class="footercopy" style="font-size: 0.8em;">Copyright Diane Adote | 2023</p></li>  
+          <li><a class="linkedin" href="https://www.linkedin.com/in/diane-adote-a9b074156" target="_blank" rel="noreferrer">
+                <img src="img/linkedinlogoicon.svg" alt="linkedin logo"></a></li>
+        </ul>
+    </div>
+</footer>
+<!--Footer Section Ends-->
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"
+integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
+<script> var scroll = new SmoothScroll('a[href*="#"]', { speed: 700 }); </script>
+</html>
