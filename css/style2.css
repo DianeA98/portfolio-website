@@ -211,6 +211,8 @@ color: #333333;
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
+#aboutrow .row {margin: 0;}
+
 #work .row { padding-bottom: 25px; border-bottom: 1px solid #333333; }
 
 
@@ -301,14 +303,59 @@ video {
   max-height: 100%;
 }
 
-#aboutpicture{
-  width: 18em;
+/* About Page Section */
+
+#aboutpicture {
+  width: 20em;
   display: block;
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
 }
 
+.circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -9em;
+  left: 3em;
+  margin-bottom: -11em;
+}
+
+.text{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  animation: rotateText 10s linear infinite;
+}
+
+@keyframes rotateText{
+  0% {
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+.text span{
+  position: absolute;
+  left: 50%;
+  font-size: 0.9em;
+  transform-origin: 0 90px;
+}
+
+#skills-tools {
+  margin: 0 200px 0 0;
+}
+
+/* About Page Section Ends */
+
+/* Footer Page Section */
 footer {
   display: block;
   margin-left: auto;
@@ -360,71 +407,7 @@ ul{
 	border-top: solid #333333;
   height: 55px;
 }
-
-/*
-#cssanimation{
-  width: 70%;
-  max-width: 70%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@keyframes earrings {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  25% {
-    -webkit-transform: rotate(1deg);
-  }
-  50% {
-    -webkit-transform: rotate(0deg);
-  }
-  75% {
-    -webkit-transform: rotate(-1deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-  }
-}
-
-.cls-1 {
-  animation:earrings 4s infinite linear;
-}
-
-
-@keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
-}
-
-.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
-*/
+/* Footer Page Section Ends*/
 
 /* ==============================
 Medium devices (640px and larger)

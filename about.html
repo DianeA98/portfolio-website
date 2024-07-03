@@ -18,6 +18,7 @@
 
 <body>
     <header>
+        <!--Nav Bar-->
         <div class="container"> 
             <div class="navtoggle" id="myNavtoggle">
             <a href="index.html" class="logo">
@@ -32,13 +33,15 @@
                 </ul>
             </nav></div>
         </div>
-       </header>
+    </header>
+     <!--Nav Bar Section Ends-->
 
-    <main><div id="about">
+    <main>
+     <div id="about">
         <div class="container">
-           <h2 style="text-align: left;">About Me</h2>
-         <div class="row">
-             <div class="col-lg-9">
+           <h2>About Me</h2>
+         <div class="row" id="aboutrow">
+             <div class="col-lg-10">
                  <h3>Based in Georgia, I&#39;m a <span class="italic">Web Designer/Digital Designer</span> and an aspiring
                     <span class="italic">Front-End Developer</span>. I'm passionate about art, design, and fashion. I enjoy traveling, listening to music,
                      and I speak three languages. I specialize in <span class="italic">website design, HTML/CSS,</span> and <span class="italic">graphic design</span>.
@@ -50,27 +53,40 @@
                  </p>    
                  <a href="files/new-resume.pdf" class="button-about" target="_blank">View My Resume</a>   
              </div>
-             <picture class="col-lg-3">
-                <source srcset="img/aboutpic_b.jpg" media="(max-width:767px)">
+              <picture class="col-lg-2">
+                <source srcset="img/aboutpic_b.jpg" media="(max-width:800px)">
                 <img id="aboutpicture" src="img/aboutpic_a.jpg" alt="My Image">
-            </picture> 
+                <div class="circle">
+                    <div class="text">
+                      <p>Diane Adote - Designer &amp; Developer -</p>
+                    </div>
+                 </div>
+                 <script>
+                    const text = document.querySelector('.text p');
+                    text.innerHTML = text.innerText.split("").map(
+                       (char, i) =>
+                       `<span style="transform:rotate(${i * 9.9}deg)">${char}</span>` 
+                    ).join("")
+                 </script>
+              </picture> 
          </div>
          <br>
-         <div class="row">
+         <!--<div>
             <h3>Experience</h3>
             <ul>
                 <li>Degree in Visual Communication Design / Fashion Design Minor</li>
                 <li>7 years experience in Digital Design, Graphic Design, &amp; Web Design</li>
             </ul>
-
-            <h2>Skills &amp; Tools</h2>
-            <div class="col-md-4" id="skills">
+         </div>-->  
+         <div class="row" id="skills-tools">
+            <!--<h2>Skills &amp; Tools</h2>-->
+            <div class="col-md-2" id="skills">
                 <h3>Skills</h3>
                 <ul>
                     <li>HTML &amp; CSS / JavaScript / UX/UI Design / Photography / Time Management / User Testing / Email Design / Multitasking / Web Design / Graphic Design </li>
                 </ul>
             </div>
-            <div class="col-md-4" id="tools">
+            <div class="col-md-2" id="tools">
                 <h3>Tools I use</h3>
                 <ul>
                     <li>Visual Studio Code / Dreamweaver / Github / Photoshop / Illustrator / Figma / Adobe XD / InDesign / Wix
@@ -78,6 +94,7 @@
                 </ul>
             </div>
          </div>
+         <h2>Contact Me</h2>
         </div>
      </div>  
     </main>   
