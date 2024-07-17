@@ -94,7 +94,24 @@
                 </ul>
             </div>
          </div>
-         <h2>Contact Me</h2>
+         <h2 style="text-align: left;">C<span>ontact me</span></h2>
+         <form id="fcf-form-id" class="fcf-form-class" style="max-width: 900px;" method="post" action="contact-form-process.php">
+            <div class="fcf-input-group col-md-6">
+              <input type="text" id="FName" name="Name" placeholder="first name" class="fcf-form-control" required>
+            </div>
+            <div class="fcf-input-group col-md-6">
+              <input type="text" id="LName" name="Name" placeholder="last name" class="fcf-form-control" required>
+            </div> 
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" placeholder="email" class="fcf-form-control" required>
+            </div>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" placeholder="message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+            <div class="fcf-form-group">
+                <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">SUBMIT</button>
+            </div>
+         </form>
         </div>
      </div>  
     </main>   

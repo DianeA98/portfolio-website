@@ -15,6 +15,7 @@ body {
     font-weight: 300; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
     color: #333333;
+    margin: 0;
   }
   
 h1, h2, h3, h4 {
@@ -119,7 +120,8 @@ a:active { /* selected link
     font-weight: 500;
     padding: 10px;
     margin-top: 10px;
-    border-radius: 3.5px;
+    border-style: solid;
+    border-color: #333333;
     transition-duration: 0.8s;
   }
 .button:hover {
@@ -133,24 +135,23 @@ a:active { /* selected link
 
 .button-about{
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #333333;
+  background-color: #fcfaf7;
   text-transform: uppercase;
-  color: #fcfaf7;
+  color:#333333;
   font-size: 16px;
   font-weight: 500;
   padding: 10px;
   margin-top: 10px;
   padding-left: 45px;
   padding-right: 45px;
-  border-radius: 3.5px;
+  border-style: solid;
+  border-color: #333333;
   transition-duration: 0.8s;
 }
 
 .button-about:hover {
-  background-color: #fcfaf7;
-  color: #333333; /* needed to override the default link color */
-  border-style: solid;
-  border-color: #333333;
+  background-color: #333333;
+  color: #fcfaf7; /* needed to override the default link color */
 }
 .button-about:active {
 color: #333333;
@@ -182,13 +183,11 @@ selector {
     background-color: #fcfaf7;
     text-transform: uppercase;
     color: #333333; /* needed to override the default link color */
-    border-style: solid;
-    border-color: #333333;
+    border: 1px solid #333333;
     font-size: 16px;
     font-weight: 500;
     padding: 10px;
     margin-top: 25px;
-    border-radius: 3.5px;
     transition-duration: 0.8s;
 }  
 
@@ -204,7 +203,7 @@ color: #333333;
 /* Layout styling */
 
 .container {
-  padding: 0 20px;
+  padding: 0 30px;
 }
 
 .row {
@@ -351,6 +350,61 @@ video {
 
 #skills-tools {
   margin: 0 200px 0 0;
+}
+
+.fcf-body {
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333333;
+  text-align: left;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #333333;
+  background-color: #fcfaf7;
+  color: #333333;
+  font-style: italic;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #333333;
+  font-style: italic;
+  background-color: #fcfaf7;
+  color: #333333;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #fcfaf7;
+  color: #fcfaf7;
+  padding: 12px 20px;
+  border: none;
+}
+
+.fcf-button{
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #fcfaf7;
+  text-transform: uppercase;
+  color: #333333; /* needed to override the default link color */
+  border: 1px solid #333333;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px;
+  margin-top: 25px;
+  transition-duration: 0.8s;
 }
 
 /* About Page Section Ends */
