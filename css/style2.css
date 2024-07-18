@@ -133,30 +133,6 @@ a:active { /* selected link
   color: #333333;
 }
 
-.button-about{
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #fcfaf7;
-  text-transform: uppercase;
-  color:#333333;
-  font-size: 16px;
-  font-weight: 500;
-  padding: 10px;
-  margin-top: 10px;
-  padding-left: 45px;
-  padding-right: 45px;
-  border-style: solid;
-  border-color: #333333;
-  transition-duration: 0.8s;
-}
-
-.button-about:hover {
-  background-color: #333333;
-  color: #fcfaf7; /* needed to override the default link color */
-}
-.button-about:active {
-color: #333333;
-}
-
 .contact-links{
   text-decoration: underline;
 }
@@ -207,7 +183,7 @@ color: #333333;
 }
 
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0 0 -10px; /* 25px top and bottom, 0 left and right */
 }
 
 #aboutrow .row {margin: 0;}
@@ -349,7 +325,7 @@ video {
 }
 
 #skills-tools {
-  margin: 0 200px 0 0;
+  margin: 0 200px 0 -10px;
 }
 
 .fcf-body {
@@ -394,17 +370,31 @@ input[type=submit] {
   border: none;
 }
 
-.fcf-button{
+.button-about{
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #fcfaf7;
   text-transform: uppercase;
-  color: #333333; /* needed to override the default link color */
-  border: 1px solid #333333;
+  color:#333333;
   font-size: 16px;
   font-weight: 500;
   padding: 10px;
-  margin-top: 25px;
+  margin-top: 10px;
+  padding-left: 45px;
+  padding-right: 45px;
+  border: 1px solid #333333;
   transition-duration: 0.8s;
+}
+
+.button-about:hover {
+  background-color: #333333;
+  color: #fcfaf7; /* needed to override the default link color */
+}
+.button-about:active {
+color: #333333;
+}
+
+form{
+  margin: 0 0 0 2.7px;
 }
 
 /* About Page Section Ends */
@@ -462,6 +452,31 @@ ul{
   height: 55px;
 }
 /* Footer Page Section Ends*/
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (max-width:600px){
+  #aboutpicture {
+    width: 18em;
+    margin-top: 50px;
+    margin-left: 0;
+  }
+
+  #skills-tools {
+    margin: 0;
+  }
+
+  #skills > ul > li{
+    margin: 0 0 0 -38px;
+  }
+
+  #tools > ul > li{
+    margin: 0 0 0 -38px;
+  }
+
+  
+}
 
 /* ==============================
 Medium devices (640px and larger)
