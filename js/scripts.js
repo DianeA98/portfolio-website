@@ -12,7 +12,7 @@ var content = 'Hello, my name is Diane Adote and I design/code beautiful things 
 
 var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
 
-$(ele).hide().appendTo('#hero h1').each(function (i) {
+$(ele).hide().appendTo('#hero h3').each(function (i) {
     $(this).delay(100 * i).css({
         display: 'inline',
         opacity: 0

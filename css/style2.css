@@ -23,28 +23,43 @@ h1, h2, h3, h4 {
   }
   
 
+/* Home Page Section*/
+
+#hero {
+  display: inline-block;
+  width: 100%;
+}
+
 #hero h1 {
-    text-align: center; /* Centers text */
+    text-align: left;
     color: #333333;
-    font-size: 2.3em;
+    font-size: 6em;
     margin: 0;
-    padding-top: 40px;
   }
 
 #hero h3 {
   text-align: right;
-  padding-left: 28px;
+  font-size: 3em;
+  font-weight: 400;
+  font-style: normal;
+  width: 650px;
+  margin-left: auto; 
+  margin-right: 0;
 }  
 
 #hero a {
-  font-size: 1.3em;
-  padding-top: 20px;
+ padding-top: -200px;
+  font-size: 150%;
 }
 
+#hero a:hover {
+  text-decoration: line-through;
+  font-style: italic;
+ }
+
 .hero-arrow {
-  width: 45%;
+  width: 10em;
   display: block;
-  padding-top: 5px;
 }
 
 h1 {
@@ -52,10 +67,10 @@ h1 {
     font-weight: 500;
   }
 
-span {
+/* span{
   font-style: italic;
-}
-  
+} */
+
 h2 {
     font-size: 2em;
     font-weight: 500;
@@ -76,12 +91,25 @@ h4 {
 .square {
     /*position:;*/
     margin: auto;
-    margin-top: -315px;
-    width: 285px;
-    height: 365px;
-    z-index: 2;
+    width: 80%;
+    height: 40em;
+    margin-top: -34em;
     background-color:#F3F1EE;
+    margin-bottom: 5em;
 }
+
+.home{
+  width: 100%;
+  height: 100vh;
+  background-color: #fcfaf7;
+}
+
+
+
+/*main {
+  padding-top: 56px;
+  margin-bottom: 4em;
+}*/
 
 img {
     width: 100%;
@@ -179,7 +207,8 @@ color: #333333;
 /* Layout styling */
 
 .container {
-  padding: 0 30px;
+  max-width: 1100px;
+  padding: 0 40px;
 }
 
 .row {
@@ -190,18 +219,16 @@ color: #333333;
 
 #work .row { padding-bottom: 25px; border-bottom: 1px solid #333333; }
 
+/* Nav Bar Section */
 
 .logo {
   max-width: 150px;
-  visibility: hidden;
-}
 
-.logo2 {
-  max-width: 150px;
 }
 
 header {
   background-color: #fcfaf7;
+  padding: 10px 0 5px;
   /*start ------------*/
 	width: 100%; 
 	background: #FCFAF7; 
@@ -210,12 +237,6 @@ header {
 	-webkit-box-shadow: 0 15px 43px rgba(51, 51, 51, 0.1)  ; 
 	-moz-box-shadow: 0 15px 43px rgba(51, 51, 51, 0.1)  ; */
   position: fixed;
-}
-
-.nav{
-  margin: 30px 0;
-  padding: 0;
-  align-items: center;
 }
 
 nav > ul {
@@ -271,24 +292,24 @@ nav > ul > li > a:visited {
   padding-right: 0;
 }
 
-#hero {
-  background-color: #fcfaf7;
-  padding: 10px 0 30px;
-  display: inline-block;
-  width: 100%;
-}
+/* Nav Bar Section Ends */
 
-main {
-  padding-top: 56px;
-  margin-bottom: 4em;
-}
+/* Work Page Section */
 
 video {
   max-width: 100%;
   max-height: 100%;
 }
 
+/* Work Page Section */
+
 /* About Page Section */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 #aboutpicture {
   width: 20em;
@@ -467,6 +488,14 @@ ul{
 Small devices (640px and larger)
 ================================= */
 @media only screen and (max-width:600px){
+  #hero{
+    padding: 10px 0 250px;
+  }
+
+  #hero span {
+    display: block;
+  }
+  
   #aboutpicture {
     width: 18em;
     margin-top: 50px;
@@ -497,7 +526,7 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 540px) {
   header {
     text-align: unset;
-    height: 50px; 
+    height: 55px; 
   }
 
   .logo {
@@ -527,16 +556,12 @@ Medium devices (640px and larger)
     display: none;
   }
 
-  main {
-    padding-top: 99px;
+  main{
+    padding-top: 150px;
   }
 
-  #hero{
-    padding: 10px 0 250px;
-  }
-
-  #hero span {
-    display: block;
+  main .about{
+    padding-top: 150px;
   }
 
   #social > ul > li {
@@ -592,7 +617,6 @@ Large devices (1024px or larger)
   }
 
   .container {
-    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
