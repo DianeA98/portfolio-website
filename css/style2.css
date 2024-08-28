@@ -161,7 +161,7 @@ a:active { /* selected link
   color: #333333;
 }
 
-.contact-links{
+/*.contact-links{
   text-decoration: underline;
 }
 
@@ -170,11 +170,11 @@ a:active { /* selected link
     text-decoration: line-through;
     font-style: italic;
   } 
-.contact-links:active { /* selected link */
+.contact-links:active { /* selected link 
   text-decoration: line-through;
   font-style: italic;
   }
-
+  */
 selector {
     margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
     position: relative;
@@ -297,12 +297,100 @@ video {
   max-height: 100%;
 }
 
-.image-grid{
-  position:relative;
-
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* 12 columns for flexible layout */
+  grid-template-rows: auto;
+  gap: 20px; /* Gap between grid items */
+  padding: 0px; /* Padding around the grid */
+  max-width: 1100px;
+  margin: 0 auto;
 }
-.image-cont{
-  padding: 20px;
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Individual grid item positioning */
+.item1 {
+  grid-column: 1 / span 7;
+  grid-row: 1;
+}
+
+.item2 {
+  grid-column: 7 / span 7;
+  grid-row: 2;
+}
+
+.item3 {
+  grid-column: 3 / span 6;
+  grid-row: 3 / span 2;
+}
+
+.item4 {
+  grid-column: 5 / span 8;
+  grid-row: 5;
+}
+
+.item5 {
+  grid-column: 1 / span 7;
+  grid-row: 6;
+}
+
+.item6 {
+  grid-column: 9 / span 4;
+  grid-row: 6;
+}
+
+.item7 {
+  grid-column: 1 / span 3;
+  grid-row: 7;
+}
+
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+  .grid-container {
+      grid-template-columns: repeat(6, 1fr); /* Fewer columns on smaller screens */
+  }
+
+  /* Adjust item positions for smaller screens */
+  .item1 { grid-column: 1 / span 6; grid-row: 1; }
+  .item2 { grid-column: 1 / span 6; grid-row: 2; }
+  .item3 { grid-column: 1 / span 6; grid-row: 3; }
+  .item4 { grid-column: 1 / span 6; grid-row: 4; }
+  .item5 { grid-column: 1 / span 6; grid-row: 5; }
+  .item6 { grid-column: 1 / span 6; grid-row: 6; }
+  .item7 { grid-column: 1 / span 6; grid-row: 7; }
+  .item8 { grid-column: 1 / span 6; grid-row: 8; }
+  .item9 { grid-column: 1 / span 6; grid-row: 9; }
+  .item10 { grid-column: 1 / span 6; grid-row: 10; }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+      grid-template-columns: repeat(4, 1fr); /* Fewer columns on very small screens */
+  }
+
+  /* Adjust item positions for very small screens */
+  .item1 { grid-column: 1 / span 4; grid-row: 1; }
+  .item2 { grid-column: 1 / span 4; grid-row: 2; }
+  .item3 { grid-column: 1 / span 4; grid-row: 3; }
+  .item4 { grid-column: 1 / span 4; grid-row: 4; }
+  .item5 { grid-column: 1 / span 4; grid-row: 5; }
+  .item6 { grid-column: 1 / span 4; grid-row: 6; }
+  .item7 { grid-column: 1 / span 4; grid-row: 7; }
+  .item8 { grid-column: 1 / span 4; grid-row: 8; }
+  .item9 { grid-column: 1 / span 4; grid-row: 9; }
+  .item10 { grid-column: 1 / span 4; grid-row: 10; }
 }
 
 /* Work Page Section */
@@ -367,47 +455,45 @@ video {
   margin: 0 ;
 }
 
-.fcf-body {
-  font-family: 'EB Garamond', serif;
-  font-style: italic;
-  font-size: 1rem;
-  font-weight: 400;
-  color: #333333;
+#contact_form {
+  background-color: #fcfaf7;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  }
+.row label{
+  color: #FFFFFF;
+  font-size: 18px;
+  margin-left: 10px;
+}
+input[type=text], textarea {
   text-align: left;
-}
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #333333;
-  background-color: #fcfaf7;
-  color: #333333;
-  font-style: italic;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=email], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #333333;
   font-style: italic;
   background-color: #fcfaf7;
+  border-radius: 0px;
+  border: solid #333333 1px;
+  margin: auto 0;
   color: #333333;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+  padding: 14px 0 18px 13px;
+  
+  }
+input[type=text] {
+  height: 25px;
+  width: 100%;
 }
 
-input[type=submit] {
-  background-color: #fcfaf7;
-  color: #fcfaf7;
-  padding: 12px 20px;
-  border: none;
+textarea{
+  width: 100%;
+  padding-top: 5px;
 }
+
+/*input[type=submit] {
+  background-color: #ff7b25;
+  color: #FFFFFF;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-left: 10px;
+  box-shadow: 5px 5px 5px #3e4444;
+}*/
 
 .button-about{
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
@@ -424,7 +510,7 @@ input[type=submit] {
   transition-duration: 0.8s;
 }
 
-#fcf-button{
+#submit_button{
   margin-top: 15px;
 }
 

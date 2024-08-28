@@ -21,3 +21,4 @@ $(ele).hide().appendTo('#hero h3').each(function (i) {
     }, 100);
 });
 
+

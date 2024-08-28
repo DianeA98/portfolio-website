@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
-    <link href="img/favicon.png" rel="icon" media="(prefers-color-scheme: light)">
-    <link href="img/favicon_darkmode.png" rel="icon" media="(prefers-color-scheme: dark)">
+    <link href="assets/favicon.png" rel="icon" media="(prefers-color-scheme: light)">
+    <link href="assets/favicon_darkmode.png" rel="icon" media="(prefers-color-scheme: dark)">
     <title>About</title>
     <script src="https://kit.fontawesome.com/ea23a61ece.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
@@ -21,7 +21,7 @@
         <div class="container"> 
             <div class="navtoggle" id="myNavtoggle">
             <a href="index2.html" class="logo">
-            <img src="img/portfolio-image.svg" style="max-width: 155px;" alt="logo"> 
+            <img src="assets/portfolio-image.svg" style="max-width: 155px;" alt="logo"> 
             </a>
             <nav>
                 <ul>
@@ -52,8 +52,8 @@
                  <a href="files/new-resume.png" class="button-about" target="_blank">View My Resume</a>   
              </div>
               <picture class="col-lg-2">
-                <source srcset="img/aboutpic_b.jpg" media="(max-width:800px)">
-                <img id="aboutpicture" src="img/aboutpic_a.jpg" alt="My Image">
+                <source srcset="assets/aboutpic_b.jpg" media="(max-width:800px)">
+                <img id="aboutpicture" src="assets/aboutpic_a.jpg" alt="My Image">
                 <div class="circle">
                     <div class="text">
                       <p>Diane Adote - Designer &amp; Developer -</p>
@@ -94,35 +94,29 @@
          </div>
 
          <h2 style="text-align: left;">C<span class="italic">ontact me</span></h2>
-         <form id="fcf-form-id" class="fcf-form-class" style="max-width: 900px;" method="post" action="contact-form-process.php">
-          <div class="fcf-form-group">
-            <div class="fcf-input-group">
-              <input type="text" id="FName" name="Name" placeholder="first name" class="fcf-form-control" required>
+         <form id="contact_form" action="contact-form.php" method="POST" enctype="multipart/form-data">
+            <div class="row">
+              <!--<label class="required" for="name">Your name:</label><br />-->
+              <input id="name" class="input" name="name" type="text" value="" placeholder="first name" size="30" /><br />
+              <span id="name_validation" class="error_message"></span>
             </div>
-          </div>
-
-          <div class="fcf-form-group">
-            <div class="fcf-input-group">
-              <input type="text" id="LName" name="Name" placeholder="last name" class="fcf-form-control" required>
-            </div> 
-          </div>
-
-          <div class="fcf-form-group">
-            <div class="fcf-input-group">
-                <input type="email" id="Email" name="Email" placeholder="email" class="fcf-form-control" required>
+            <div class="row">
+                <!--<label class="required" for="name">Your name:</label><br />-->
+                <input id="name2" class="input" name="name" type="text" value="" placeholder="last name" size="30" /><br />
+                <span id="name_validation2" class="error_message"></span>
+              </div>
+            <div class="row">
+              <!--<label class="required" for="email">Your email:</label><br />-->
+              <input id="email" class="input" name="email" type="text" value="" placeholder="email" size="30" /><br />
+              <span id="email_validation" class="error_message"></span>
             </div>
-          </div>
-
-         <div class="fcf-form-group">
-            <div class="fcf-input-group">
-                <textarea id="Message" name="Message" placeholder="message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            <div class="row">
+              <!--<label class="required" for="message">Your message:</label><br />-->
+              <textarea id="message" class="input" name="message" placeholder="message" rows="7" cols="30"></textarea><br />
+              <span id="message_validation" class="error_message"></span>
             </div>
-         </div>
-
-        <div class="fcf-form-group">
-             <button type="submit" id="fcf-button" class="button-about">SUBMIT</button>
-        </div>
-        </form>
+            <input id="submit_button" class="button-about" type="submit" value="SUBMIT" />
+         </form>
         </div>
      </div>  
     </main>   
