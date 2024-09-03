@@ -11,11 +11,96 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
     <link href="assets/favicon.png" rel="icon" media="(prefers-color-scheme: light)">
     <link href="assets/favicon_darkmode.png" rel="icon" media="(prefers-color-scheme: dark)">
-    <title>About</title>
+    <title>Ballard Designs</title>
     <script src="https://kit.fontawesome.com/ea23a61ece.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
 
-<body></body>
+<body>
+    <header>
+        <div class="container"> 
+            <div class="navtoggle" id="myNavtoggle">
+            <a href="index2.html" class="logo">
+            <img src="assets/portfolio-image.svg" style="max-width: 155px;" alt="logo"> 
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="work.html" onclick="menuToggle()">WORK</a></li>
+                    <li><a href="about.html" onclick="menuToggle()">ABOUT</a></li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                </ul>
+            </nav></div>
+        </div>
+    </header>
+     <!--Nav Bar Section Ends-->
+
+    <main>
+     <div id="work">
+        <div class="hero-img"><img src="assets/bd-emails.png"></div>
+        <div class="container">
+          <div class="row">
+           <div class="col-lg-5">
+             <h2 class="pj-title" style="text-align: left;">B<span class="italic">allard</span> D<span class="italic">esign</span></h2>
+           </div>
+           <div class="col-lg-7">
+            <p>
+                At Ballard Designs, I designed and coded emails and created cohesive content across various marketing channels 
+                to ensure alignment with email. I created graphics for social media, affiliate, other marketing channels and retail.
+                I maintained existing landing pages by updating links and images
+                to support web merchandising efforts. Additionally, I contributed to the redesign of select pages to achieve a
+                more modern and visually appealing look. I supported seasonal web launches by cropping
+                images for banners, flyouts, and other assets.
+            </p>
+            <br>
+            <div class="col-sm-2" id="type">
+                    <h3>T<span class="italic">ype</span></h3>
+                    <ul>
+                        <li>Email Design / Web Design / Social Media</li>
+                    </ul>
+            </div>
+            <div class="col-sm-2" id="tools">
+                    <h3>T<span class="italic">ools I use</span></h3>
+                    <ul>
+                        <li>Photoshop / Illustrator / Figma / HTML &amp; CSS / Salesforce / DaVinci Movable Ink</li>
+                    </ul>
+            </div>
+           </div>
+          </div>
+          <div class="carousel-container">
+            <button class="carousel-control prev">‹</button>
+            <div class="carousel">
+                <div class="carousel-item"><img src="image1.jpg" alt="Image 1"></div>
+                <div class="carousel-item"><img src="image2.jpg" alt="Image 2"></div>
+                <div class="carousel-item"><img src="image3.jpg" alt="Image 3"></div>
+                <div class="carousel-item"><img src="image4.jpg" alt="Image 4"></div>
+            </div>
+            <button class="carousel-control next">›</button>
+            
+            <!-- Dots Indicators -->
+            <div class="carousel-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        </div>
+     </div>  
+    </main>   
+</body>
+
+<!--Footer Section
+<footer id="footer">
+    <div class="container" id="social">
+        <ul>
+          <li><p class="footercopy" style="font-size: 0.8em;">Copyright Diane Adote | 2023</p></li>  
+          <li><a class="linkedin" href="https://www.linkedin.com/in/diane-adote-a9b074156" target="_blank" rel="noreferrer">
+                <img src="img/linkedinlogoicon.svg" alt="linkedin logo"></a></li>
+        </ul>
+    </div>
+</footer>
+Footer Section Ends-->
+
+<script src="js/scripts.js"></script>
 
 </html>

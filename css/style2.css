@@ -207,7 +207,7 @@ color: #333333;
 /* Layout styling */
 
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -227,10 +227,9 @@ color: #333333;
 }
 
 header {
-  background-color: #fcfaf7;
   padding: 12px 0 5px;
 	width: 100%; 
-	background: #FCFAF7; 
+	background: #fcfaf7; 
 	border-bottom: solid #333333;
   position: fixed;
 }
@@ -393,7 +392,129 @@ video {
   .item10 { grid-column: 1 / span 4; grid-row: 10; }
 }
 
-/* Work Page Section */
+
+/* Projects */
+.hero-img{
+  width: 100%;
+  background-size: cover;
+  margin-top: -35px;
+}
+
+.pj-title{
+  font-size: 3.5em;
+  font-weight: 500;
+}
+
+#work p{
+  margin-top: 18px;
+}
+
+
+/* Carousel Code Starts */
+.carousel-container {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 1000;
+  pointer-events: auto;
+  transition: background-color 0.3s;
+}
+
+.carousel-control.prev {
+  left: -40px;
+}
+
+.carousel-control.next {
+  right: -40px;
+}
+
+.carousel-control:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Dots styling */
+.carousel-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.carousel-dots .dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carousel-dots .dot.active {
+  background-color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .carousel-container {
+      width: 90%;
+  }
+
+  .carousel-control {
+      font-size: 1.5rem;
+      padding: 8px;
+  }
+
+  .carousel-control.prev {
+      left: -25px;
+  }
+
+  .carousel-control.next {
+      right: -25px;
+  }
+
+  .carousel-dots .dot {
+      width: 10px;
+      height: 10px;
+  }
+}
+
+
+/* Carousel Code Ends */
+
+/* Work Page Section Ends*/
 
 /* About Page Section */
 
@@ -638,6 +759,10 @@ Small devices (600px and smaller)
     margin-bottom: 15px;
   }
 
+  #type > ul > li{
+    margin-bottom: 15px;
+  }
+
   #tools > ul > li{
     margin: 0;
   }
@@ -721,9 +846,14 @@ Medium devices (640px and larger)
   #skills-tools{
     margin-bottom: 25px;
   }
+
   #skills > ul > li{
     margin: 0;
     padding-right: 20px;
+  }
+
+  #type > ul > li{
+    margin-bottom: 20px;
   }
 
   #tools > ul > li{
