@@ -11,11 +11,79 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
     <link href="assets/favicon.png" rel="icon" media="(prefers-color-scheme: light)">
     <link href="assets/favicon_darkmode.png" rel="icon" media="(prefers-color-scheme: dark)">
-    <title>About</title>
+    <title>Reaulex Co</title>
     <script src="https://kit.fontawesome.com/ea23a61ece.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
 
-<body></body>
+<body>
+    <header>
+        <div class="container"> 
+            <div class="navtoggle" id="myNavtoggle">
+            <a href="index2.html" class="logo">
+            <img src="assets/portfolio-image.svg" style="max-width: 155px;" alt="logo"> 
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="work.html" onclick="menuToggle()">WORK</a></li>
+                    <li><a href="about.html" onclick="menuToggle()">ABOUT</a></li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                </ul>
+            </nav></div>
+        </div>
+    </header>
+     <!--Nav Bar Section Ends-->
+
+    <main>
+     <div id="work">
+        <div class="hero-img"><img src="assets/reaulexco_hp1_1200.jpg"></div>
+        <div class="container">
+          <div class="row">
+           <div class="col-lg-5">
+             <h2 class="pj-title" style="text-align: left;">R<span class="italic">eaulex</span> C<span class="italic">o</span></h2>
+           </div>
+           <div class="col-lg-7">
+            <p>
+                This portfolio website was designed for a Creative Director to showcase her work, services, and include a contact page for booking 
+                appointments. Completed in two months, the project was my first time designing for a Creative Director, so I researched for inspiration, 
+                guided by her Pinterest mood board. She wanted a minimalist style with a light color palette, combining serif and sans-serif fonts 
+                for sophistication. We collaborated on the website's content, imagery, and structure, leading to a simple information architecture. 
+                The site features a cream background for simplicity, brown accents from her logo, and light green highlights for calls to action.
+            </p>
+            <br>
+            <div class="col-sm-2" id="type">
+                <h3>M<span class="italic">y role</span></h3>
+                    <ul>
+                        <li>Branding | Web Design</li>
+                    </ul>
+            </div>
+            <div class="col-sm-2" id="tools">
+                    <h3>T<span class="italic">ools I use</span></h3>
+                    <ul>
+                        <li>Adobe XD | Illustrator | Wix</li>
+                    </ul>
+            </div>
+            <a href="https://www.reaulexco.com/" target="_blank" class="buttonr">Check it Out</a>
+           </div>
+          </div>
+        </div>
+     </div>  
+    </main> 
+    
+    <script src="script.js"></script>
+
+</body>
+
+<!--Footer Section
+<footer id="footer">
+    <div class="container" id="social">
+        <ul>
+          <li><p class="footercopy" style="font-size: 0.8em;">Copyright Diane Adote | 2023</p></li>  
+          <li><a class="linkedin" href="https://www.linkedin.com/in/diane-adote-a9b074156" target="_blank" rel="noreferrer">
+                <img src="img/linkedinlogoicon.svg" alt="linkedin logo"></a></li>
+        </ul>
+    </div>
+</footer>
+Footer Section Ends-->
 
 </html>
