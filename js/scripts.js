@@ -24,3 +24,45 @@ $(ele).hide().appendTo('#hero h3').each(function (i) {
 
 // Carousel functionality
 
+document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.carousel-slide');
+    if (!slides.length) {
+        console.error('No slides found');
+        return;
+    }
+
+    const totalSlides = slides.length;
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        if (index >= totalSlides) {
+            currentSlide = 0;
+        } else if (index < 0) {
+            currentSlide = totalSlides - 1;
+        } else {
+            currentSlide = index;
+        }
+        const offset = -currentSlide * 100;
+        document.querySelector('.carousel').style.transform = `translateX(${offset}%)`;
+    }
+
+    const leftArrow = document.querySelector('.left-arrow');
+    const rightArrow = document.querySelector('.right-arrow');
+
+    if (leftArrow && rightArrow) {
+        leftArrow.addEventListener('click', () => {
+            showSlide(currentSlide - 1);
+        });
+
+        rightArrow.addEventListener('click', () => {
+            showSlide(currentSlide + 1);
+        });
+    } else {
+        console.error('Arrow buttons not found');
+    }
+
+    // Optional: Auto-slide
+    setInterval(() => {
+        showSlide(currentSlide + 1);
+    }, 3000); // Change slide every 3 seconds
+});

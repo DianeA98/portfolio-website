@@ -223,14 +223,14 @@ color: #333333;
 
 .logo {
   max-width: 150px;
-
+  padding-bottom: 20px;
 }
 
 header {
-  padding: 12px 0 5px;
+  padding: 12px 0 3px;
 	width: 100%; 
 	background: #fcfaf7; 
-	border-bottom: solid #333333;
+	border-bottom: 1px solid #333333;
   position: fixed;
 }
 
@@ -241,7 +241,6 @@ nav > ul {
 }
 
 nav > ul > li > a {
-  padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #333333;
@@ -411,8 +410,131 @@ video {
 
 
 /* Carousel Code Starts */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
 
 
+.image-container {
+  width: 90%;
+  height: 500px; /* Adjust height as needed */
+  border: 1px solid #333333;
+  overflow-y: scroll; /* Enable vertical scrolling */
+  position: relative;
+  margin-bottom: 40px;
+  margin: auto;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+}
+
+.slider {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 24px;
+  transform: translateY(-50%);
+}
+
+.mini-browser {
+  width: 90%;
+  height: 35px;
+  border: 1px solid #333333;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.dot{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fcfaf7;
+  border: 1px solid #333333;
+  display: inline-block;
+  margin: 4px;
+}
+
+.browser-dots{
+  margin: 6px 0 0 6px;
+}
+
+.content {
+  padding: 40px;
+  text-align: center;
+}
+
+
+.carousel-container {
+  position: relative;
+  width: 90%;
+  height: 450px;
+  margin: auto;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  height: 450px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 24px;
+}
+
+.left-arrow {
+  left: 10px; /* Adjust the position as needed */
+}
+
+.right-arrow {
+  right: 10px; /* Adjust the position as needed */
+}
 
 /* Carousel Code Ends */
 
@@ -672,6 +794,20 @@ Small devices (600px and smaller)
   .logo {
     max-width: 150px;
     visibility:visible;
+  }
+
+  /*.image-container {
+    width: 100%;
+    height: 500px; /* Adjust height as needed
+  } */
+
+  .carousel-container{
+    width: 100%;
+  }
+
+  .mini-browser {
+    width: 100%;
+    margin-top: 30px;
   }
 }
 
