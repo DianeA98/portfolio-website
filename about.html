@@ -53,7 +53,7 @@
              </div>
               <picture class="col-lg-2">
                 <source srcset="assets/aboutpic_b.jpg" media="(max-width:800px)">
-                <img id="aboutpicture" src="assets/aboutpic_a.jpg" alt="My Image">
+                <img id="aboutpicture" src="assets/aboutpic_a.jpg" alt="My Headshot">
                 <div class="circle">
                     <div class="text">
                       <p>Diane Adote - Designer &amp; Developer -</p>
@@ -94,45 +94,32 @@
          </div>
 
          <h2 style="text-align: left;">C<span class="italic">ontact me</span></h2>
-         <form id="contact_form" action="contact-form.php" method="POST" enctype="multipart/form-data">
-            <div class="row">
-              <!--<label class="required" for="name">Your name:</label><br />-->
-              <input id="name" class="input" name="name" type="text" value="" placeholder="first name" size="30" /><br />
-              <span id="name_validation" class="error_message"></span>
-            </div>
-            <div class="row">
-                <!--<label class="required" for="name">Your name:</label><br />-->
-                <input id="name2" class="input" name="name" type="text" value="" placeholder="last name" size="30" /><br />
-                <span id="name_validation2" class="error_message"></span>
-              </div>
-            <div class="row">
-              <!--<label class="required" for="email">Your email:</label><br />-->
-              <input id="email" class="input" name="email" type="text" value="" placeholder="email" size="30" /><br />
-              <span id="email_validation" class="error_message"></span>
-            </div>
-            <div class="row">
-              <!--<label class="required" for="message">Your message:</label><br />-->
-              <textarea id="message" class="input" name="message" placeholder="message" rows="7" cols="30"></textarea><br />
-              <span id="message_validation" class="error_message"></span>
-            </div>
-            <input id="submit_button" class="button-about" type="submit" value="SUBMIT" />
-         </form>
+         
+         <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                <input type="hidden" name="access_key" value="0df7d68e-5e68-4989-923d-685be08f9b72">
+                <input type="text" name="name" placeholder="name" class="contact-inputs" required>
+                <input type="email" name="email" placeholder="email" class="contact-inputs" required>
+                <textarea name="message" placeholder="message" class="contact-inputs" required></textarea>
+                <button type="submit" id="contact-button">SUBMIT</button>
+            </form>
+         </div>
         </div>
      </div>  
     </main>   
 </body>
 
-<!--Footer Section
-<footer id="footer">
-    <div class="container" id="social">
+<!--Footer Section-->
+<footer>
+    <div class="container" id="footer">
         <ul>
-          <li><p class="footercopy" style="font-size: 0.8em;">Copyright Diane Adote | 2023</p></li>  
+          <li><p class="footercopy" style="font-size: 0.8em;">COPYRIGHT DIANE ADOTE | 2024</p></li>  
           <li><a class="linkedin" href="https://www.linkedin.com/in/diane-adote-a9b074156" target="_blank" rel="noreferrer">
-                <img src="img/linkedinlogoicon.svg" alt="linkedin logo"></a></li>
+                <img src="assets/linkedinlogoicon.svg" alt="linkedin logo"></a></li>
         </ul>
     </div>
 </footer>
-Footer Section Ends-->
+<!--Footer Section Ends-->
 
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"
 integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="

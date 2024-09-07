@@ -128,6 +128,59 @@ a {
   font-style: italic;
 }
 
+.contact-container{
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact-left{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+}
+
+.contact-inputs{
+  width: 100vh;
+  height: 45px;
+  border: 1px solid #333333;
+  outline: none;
+  padding-left: 20px;
+  font-weight: 500;
+  font-style: italic;
+  color: #333333;
+  background-color: #fcfaf7;
+}
+
+.contact-left textarea{
+  height: 140px;
+  padding-top: 15px;
+}
+
+.contact-input::placeholder{
+  color: #a9a9a9;
+}
+
+#contact-button{
+  width: 170px;
+  display: block;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #333333;
+  border: 1px solid #333333;
+  cursor: pointer;
+  background-color: #fcfaf7;
+  transition-duration: 0.8s;
+}
+
+#contact-button:hover{
+  background-color: #333333;
+  color: #fcfaf7;
+}
+
 
 /* a:hover,
 a:focus {
@@ -161,20 +214,6 @@ a:active { /* selected link
   color: #333333;
 }
 
-/*.contact-links{
-  text-decoration: underline;
-}
-
-.contact-links:hover,
-.contact-links:focus {
-    text-decoration: line-through;
-    font-style: italic;
-  } 
-.contact-links:active { /* selected link 
-  text-decoration: line-through;
-  font-style: italic;
-  }
-  */
 selector {
     margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
     position: relative;
@@ -223,11 +262,11 @@ color: #333333;
 
 .logo {
   max-width: 150px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 header {
-  padding: 12px 0 3px;
+  padding: 9px;
 	width: 100%; 
 	background: #fcfaf7; 
 	border-bottom: 1px solid #333333;
@@ -236,8 +275,15 @@ header {
 
 nav > ul {
   list-style-type: none;
-  padding: 0;
+  padding-top: 4px;
   margin: 0;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 nav > ul > li > a {
@@ -408,20 +454,10 @@ video {
   margin-top: 18px;
 }
 
-
-/* Carousel Code Starts */
 .logo {
   font-size: 24px;
   font-weight: bold;
 }
-
-nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
 
 .image-container {
   width: 90%;
@@ -445,7 +481,7 @@ nav a {
 }
 
 button {
-  position: absolute;
+  *position: absolute;
   top: 50%;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -600,46 +636,6 @@ button {
   margin: 0 ;
 }
 
-#contact_form {
-  background-color: #fcfaf7;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  }
-.row label{
-  color: #FFFFFF;
-  font-size: 18px;
-  margin-left: 10px;
-}
-input[type=text], textarea {
-  text-align: left;
-  font-style: italic;
-  background-color: #fcfaf7;
-  border-radius: 0px;
-  border: solid #333333 1px;
-  margin: auto 0;
-  color: #333333;
-  padding: 14px 0 18px 13px;
-  
-  }
-input[type=text] {
-  height: 25px;
-  width: 100%;
-}
-
-textarea{
-  width: 100%;
-  padding-top: 5px;
-}
-
-/*input[type=submit] {
-  background-color: #ff7b25;
-  color: #FFFFFF;
-  border-radius: 10px;
-  font-size: 18px;
-  margin-left: 10px;
-  box-shadow: 5px 5px 5px #3e4444;
-}*/
-
 .button-about{
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #fcfaf7;
@@ -675,56 +671,46 @@ form{
 
 /* Footer Page Section */
 footer {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  display:block;
+  margin: auto;
+  padding-top: 13px;
   text-align: center;
+  border: 1px solid #333333;
+  height: 60px;
 }
 
-#social > ul {
+#footer > ul {
   list-style-type: none;
   padding: 0;
   transition-property: opacity;
 }
 
-#social > ul > li {
+#footer > ul > li {
   display: inline-block;
-  margin: 0 8px;
-  margin-top: -5em;
-  margin-bottom: -1.5em;
+  margin: 0 0 0 8px;
 }
 
-#social > ul > li > a {
+#footer > ul > li > a {
   width: 20px;
   display: inline-block;
 }
 
-#social > ul > li > a:hover {
+#footer > ul > li > a:hover {
   position: relative;
   bottom: 3px;
   opacity: 0.8;
 }
 
-#social > ul > li > a:visited {
+#footer > ul > li > a:visited {
   position: relative;
-  bottom: 3px;
   opacity: 0.8;
 }
-
-.linkedin{
-  width: 20px;
-}
-
 
 ul{
   list-style-type: none;
 }
 
-#contact{
-	background: #fcfaf7; 
-	border-top: solid #333333;
-  height: 55px;
-}
+
 /* Footer Page Section Ends*/
 
 /* ==============================
@@ -801,6 +787,10 @@ Small devices (600px and smaller)
     height: 500px; /* Adjust height as needed
   } */
 
+  .contact-inputs{
+    width: 100%;
+  }
+
   .carousel-container{
     width: 100%;
   }
@@ -808,6 +798,10 @@ Small devices (600px and smaller)
   .mini-browser {
     width: 100%;
     margin-top: 30px;
+  }
+
+  footer{
+    padding-top: -6px;
   }
 }
 
@@ -845,10 +839,6 @@ Medium devices (640px and larger)
     margin: 1.2em 0;
   }
 
-  nav > ul > li {
-    display: inline-block;
-  }
-
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
@@ -860,14 +850,6 @@ Medium devices (640px and larger)
   #social > ul > li {
     margin-top: -5em;
     margin-bottom: 0.5em;
-  }
-
-  footer{
-    height: 50px;
-  }
-
-  #footer{
-    padding-bottom: 1em;
   }
 
   [class*="col-"] {
