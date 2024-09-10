@@ -128,67 +128,6 @@ a {
   font-style: italic;
 }
 
-.contact-container{
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.contact-left{
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 15px;
-}
-
-.contact-inputs{
-  width: 100vh;
-  height: 45px;
-  border: 1px solid #333333;
-  outline: none;
-  padding-left: 20px;
-  font-weight: 500;
-  font-style: italic;
-  color: #333333;
-  background-color: #fcfaf7;
-}
-
-.contact-left textarea{
-  height: 140px;
-  padding-top: 15px;
-}
-
-.contact-input::placeholder{
-  color: #a9a9a9;
-}
-
-#contact-button{
-  width: 170px;
-  display: block;
-  align-items: center;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  padding: 15px 30px;
-  font-size: 16px;
-  color: #333333;
-  border: 1px solid #333333;
-  cursor: pointer;
-  background-color: #fcfaf7;
-  transition-duration: 0.8s;
-}
-
-#contact-button:hover{
-  background-color: #333333;
-  color: #fcfaf7;
-}
-
-
-/* a:hover,
-a:focus {
-    color: #fcfaf7;
-    text-decoration: line-through;
-  } 
-a:active { /* selected link 
-    colosr: #994c30;} */
 
 .button {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
@@ -344,7 +283,7 @@ video {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 15px;
   /*max-width: 1000px;*/
   margin: 0 auto 60px auto;
@@ -432,7 +371,7 @@ video {
 }
 
 button {
-  *position: absolute;
+  position: absolute;
   top: 50%;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -470,57 +409,71 @@ button {
   text-align: center;
 }
 
+/* Carousel Code Starts */
 
 .carousel-container {
+  width: 100%;
+  max-width: 800px;
   position: relative;
-  width: 90%;
-  height: 450px;
+  padding: 20px;
+  border-radius: 10px;
   margin: auto;
-  overflow: hidden;
-  overflow-y: scroll;
 }
 
 .carousel {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  padding: 0 50px; /* Add padding to leave space for the arrows */
 }
 
-.carousel-slide {
-  min-width: 100%;
-  height: 450px;
-  box-sizing: border-box;
+.carousel-item {
+  display: none;
   text-align: center;
+  font-size: 18px;
+  color: #333;
+  height: 400px;
 }
 
-.carousel-slide img {
-  width: 100%;
-  height: auto;
+.carousel-item.active {
+  display: block;
 }
 
-.description {
+.author {
   margin-top: 10px;
-  font-size: 16px;
+  font-weight: bold;
+  color: #555;
 }
 
-.arrow {
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.prev, .next {
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+  padding: 10px;
+  user-select: none;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 10;
-  font-size: 24px;
 }
 
-.left-arrow {
-  left: 10px; /* Adjust the position as needed */
+.prev {
+  left: -60px; /* Adjust this to move it further left */
 }
 
-.right-arrow {
-  right: 10px; /* Adjust the position as needed */
+.next {
+  right: -60px; /* Adjust this to move it further right */
+}
+
+.prev:hover, .next:hover {
+  color: #000;
 }
 
 /* Carousel Code Ends */
@@ -538,8 +491,7 @@ button {
 #aboutpicture {
   width: 20em;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   border-radius: 50%;
 }
 
@@ -616,6 +568,59 @@ color: #333333;
 
 form{
   margin: 0 0 0 2.7px;
+}
+
+.contact-container{
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact-left{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+}
+
+.contact-inputs{
+  width: 100vh;
+  height: 45px;
+  border: 1px solid #333333;
+  outline: none;
+  padding-left: 20px;
+  font-weight: 500;
+  font-style: italic;
+  color: #333333;
+  background-color: #fcfaf7;
+}
+
+.contact-left textarea{
+  height: 140px;
+  padding-top: 15px;
+}
+
+.contact-input::placeholder{
+  color: #a9a9a9;
+}
+
+#contact-button{
+  width: 170px;
+  display: block;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #333333;
+  border: 1px solid #333333;
+  cursor: pointer;
+  background-color: #fcfaf7;
+  transition-duration: 0.8s;
+}
+
+#contact-button:hover{
+  background-color: #333333;
+  color: #fcfaf7;
 }
 
 /* About Page Section Ends */
@@ -708,8 +713,7 @@ Small devices (600px and smaller)
   #aboutpicture {
     width: 18em;
     margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
   }
 
   #skills-tools {

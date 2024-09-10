@@ -67,30 +67,53 @@
            </div>
           </div>
 
-        <div class="carousel-container">
-         <button class="arrow left-arrow">&lt;</button>
-          <div class="carousel">
-            <div class="carousel-slide">
-                <img src="assets/reaulexco_project.jpg" alt="Slide 1">
-                <p class="description">Description for Slide 1</p>
+          <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item active">
+                    <img src="assets/reaulexco_project.jpg" alt="Reaulex Co Website Mockup">
+                    <p class="author">- TEODORO N.</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/reaulexco_roughdraft.jpg" alt="Reaulex Co Design Rough draft">
+                    <p class="author">- AUTHOR NAME</p>
+                </div>
+                <!-- Add more carousel items here -->
             </div>
-            <div class="carousel-slide">
-                <img src="assets/reaulexco_roughdraft.jpg" alt="Slide 2">
-                <p class="description">Description for Slide 2</p>
+            <div class="carousel-controls">
+                <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
+                <span class="next" onclick="changeSlide(1)">&#10095;</span>
             </div>
-            <div class="carousel-slide">
-                <img src="assets/reaulexco_informationarchitecture.jpg" alt="Slide 3">
-                <p class="description">Description for Slide 3</p>
-            </div>
-           </div>
-         <button class="arrow right-arrow">&gt;</button>
-        </div>
+          </div>
         
         </div>
      </div>  
     </main> 
-    
-    <script src="scripts2.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          let currentIndex = 0;
+          const items = document.querySelectorAll('.carousel-item');
+          const totalItems = items.length;
+        
+          const updateCarousel = () => {
+            items.forEach((item, index) => {
+              item.classList.toggle('active', index === currentIndex);
+            });
+          };
+        
+          document.querySelector('.prev').addEventListener('click', () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalItems - 1;
+            updateCarousel();
+          });
+        
+          document.querySelector('.next').addEventListener('click', () => {
+            currentIndex = (currentIndex < totalItems - 1) ? currentIndex + 1 : 0;
+            updateCarousel();
+          });
+        
+          updateCarousel();
+        });
+        </script>
 
 </body>
 
@@ -105,5 +128,13 @@
     </div>
 </footer>
 <!--Footer Section Ends-->
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+    crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script> var scroll = new SmoothScroll('a[href*="#"]', { speed: 700 }); </script>
+
+<script src="scripts.js"></script>
 
 </html>
