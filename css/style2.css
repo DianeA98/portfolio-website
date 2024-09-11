@@ -415,15 +415,18 @@ button {
   width: 100%;
   max-width: 800px;
   position: relative;
-  padding: 20px;
-  border-radius: 10px;
-  margin: auto;
+  padding: 10px;
+  margin: 40px auto 40px auto;
 }
 
 .carousel {
   position: relative;
   overflow: hidden;
-  padding: 0 50px; /* Add padding to leave space for the arrows */
+  padding: 0; /* Add padding to leave space for the arrows */
+  height: 450px;
+  overflow: scroll;
+  border: 1px solid #333333;
+  object-fit: cover;
 }
 
 .carousel-item {
@@ -431,7 +434,9 @@ button {
   text-align: center;
   font-size: 18px;
   color: #333;
-  height: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  height: auto;
 }
 
 .carousel-item.active {
@@ -469,7 +474,7 @@ button {
 }
 
 .next {
-  right: -60px; /* Adjust this to move it further right */
+  right: -35px; /* Adjust this to move it further right */
 }
 
 .prev:hover, .next:hover {
@@ -715,6 +720,32 @@ Small devices (600px and smaller)
     margin-top: 50px;
     margin: auto;
   }
+
+  .carousel {
+    height: 45vh;
+  }
+ 
+  .carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  .prev {
+    left: -45px; /* Adjust this to move it further left */
+  }
+  
+  .next {
+    right: -24px; /* Adjust this to move it further right */
+  }
+  
+  .prev:hover, .next:hover {
+    color: #000;
+  }
+  
 
   #skills-tools {
     margin-bottom: 20px;
