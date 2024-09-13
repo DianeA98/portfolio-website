@@ -129,30 +129,6 @@ a {
 }
 
 
-.button {
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #fcfaf7;
-    text-transform: uppercase;
-    color: #333333; /* needed to override the default link color */
-    border-style: solid;
-    border-color: #333333;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 10px;
-    margin-top: 10px;
-    border-style: solid;
-    border-color: #333333;
-    transition-duration: 0.8s;
-  }
-.button:hover {
-    text-decoration: none;
-    background-color: #333333;
-    color: #fcfaf7;
-  }
-.button:active {
-  color: #333333;
-}
-
 selector {
     margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
     position: relative;
@@ -160,8 +136,9 @@ selector {
     width: 1200px;
   }  
 
-.buttonr{
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+button {
+    display: block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    position: relative;
     background-color: #fcfaf7;
     text-transform: uppercase;
     color: #333333; /* needed to override the default link color */
@@ -169,18 +146,21 @@ selector {
     font-size: 16px;
     font-weight: 500;
     padding: 10px;
-    margin-top: 25px;
     transition-duration: 0.8s;
-}  
+    width: 200px;
+    margin-top: 25px;
+  }
 
-.buttonr:hover {
-  text-decoration: none;
-  background-color: #333333;
+button:hover {
+    color: #fcfaf7; /* needed to override the default link color */
+    background-color: #333333;
+  }
+
+button:active {
   color: #fcfaf7;
-}
-.buttonr:active {
-color: #333333;
-}
+  background-color: #333333;
+  }
+
 
 /* Layout styling */
 
@@ -349,41 +329,14 @@ video {
   font-weight: bold;
 }
 
-.image-container {
-  width: 90%;
-  height: 500px; /* Adjust height as needed */
-  border: 1px solid #333333;
-  overflow-y: scroll; /* Enable vertical scrolling */
-  position: relative;
-  margin-bottom: 40px;
-  margin: auto;
-}
-
-.image-container img {
-  width: 100%;
-  display: block;
-}
-
 .slider {
   position: relative;
   width: 80%;
   max-width: 600px;
 }
 
-button {
-  position: absolute;
-  top: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  font-size: 24px;
-  transform: translateY(-50%);
-}
-
 .mini-browser {
-  width: 90%;
+  width: 100%;
   height: 35px;
   border: 1px solid #333333;
   margin: auto;
@@ -544,31 +497,8 @@ button {
   margin: 0 ;
 }
 
-.button-about{
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #fcfaf7;
-  text-transform: uppercase;
-  color:#333333;
-  font-size: 16px;
-  font-weight: 500;
-  padding: 10px;
-  margin-top: 30px;
-  padding-left: 45px;
-  padding-right: 45px;
-  border: 1px solid #333333;
-  transition-duration: 0.8s;
-}
-
-#submit_button{
-  margin-top: 15px;
-}
-
-.button-about:hover {
-  background-color: #333333;
-  color: #fcfaf7; /* needed to override the default link color */
-}
-.button-about:active {
-color: #333333;
+#button-about{
+  
 }
 
 form{
@@ -609,23 +539,9 @@ form{
 }
 
 #contact-button{
-  width: 170px;
-  display: block;
-  align-items: center;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  padding: 15px 30px;
-  font-size: 16px;
-  color: #333333;
-  border: 1px solid #333333;
-  cursor: pointer;
-  background-color: #fcfaf7;
-  transition-duration: 0.8s;
-}
-
-#contact-button:hover{
-  background-color: #333333;
-  color: #fcfaf7;
+  margin-top: 1px;
+  margin-bottom: 40px;
+  padding: 10px 30px;
 }
 
 /* About Page Section Ends */
@@ -709,6 +625,10 @@ Small devices (600px and smaller)
     margin-top: -280px;
     height: 18em;
     margin-bottom: 40px;
+  }
+
+  #button-about{
+    margin-bottom: 20px;
   }
 
   main{
