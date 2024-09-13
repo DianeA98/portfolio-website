@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
+    <link href="assets/favicon.png" rel="icon" media="(prefers-color-scheme: light)">
+    <link href="assets/favicon_darkmode.png" rel="icon" media="(prefers-color-scheme: dark)">
+    <title>Reaulex Co</title>
+    <script src="https://kit.fontawesome.com/ea23a61ece.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container"> 
+            <div class="navtoggle" id="myNavtoggle">
+            <a href="index2.html" class="logo">
+            <img src="assets/portfolio-image.svg" style="max-width: 155px;" alt="logo"> 
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="work.html" onclick="menuToggle()">WORK</a></li>
+                    <li><a href="about.html" onclick="menuToggle()">ABOUT</a></li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                </ul>
+            </nav></div>
+        </div>
+    </header>
+     <!--Nav Bar Section Ends-->
+
+    <main>
+     <div id="work">
+        <div class="hero-img"><img src="assets/reaulexco_hp1_1200.jpg"></div>
+        <div class="container">
+          <div class="row">
+           <div class="col-lg-5">
+             <h2 class="pj-title" style="text-align: left;">R<span class="italic">eaulex</span> C<span class="italic">o</span></h2>
+           </div>
+           <div class="col-lg-7">
+            <p>
+                This portfolio website was designed for a Creative Director to showcase her work, services, and include a contact page for booking 
+                appointments. Completed in two months, the project was my first time designing for a Creative Director, so I researched for inspiration, 
+                guided by her Pinterest mood board. She wanted a minimalist style with a light color palette, combining serif and sans-serif fonts 
+                for sophistication. We collaborated on the website's content, imagery, and structure, leading to a simple information architecture. 
+                The site features a cream background for simplicity, brown accents from her logo, and light green highlights for calls to action.
+            </p>
+            <a href="https://www.reaulexco.com/" target="_blank" ><button id="buttonr">Check it Out</button></a>
+            <br>
+            <div class="col-sm-2" id="type">
+                <h3>M<span class="italic">y role</span></h3>
+                    <ul>
+                        <li>Branding | Web Design</li>
+                    </ul>
+            </div>
+            <div class="col-sm-2" id="tools">
+                    <h3>T<span class="italic">ools I use</span></h3>
+                    <ul>
+                        <li>Adobe XD | Illustrator | Wix</li>
+                    </ul>
+            </div>
+           </div>
+          </div>
+
+          <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item active">
+                    <img src="assets/reaulexco_project.jpg" alt="Reaulex Co Website Mockup">
+                    <!--<p class="author">- TEODORO N.</p>-->
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/reaulexco_roughdraft.jpg" alt="Reaulex Co Design Rough draft">
+                    <!--<p class="author">- AUTHOR NAME</p>-->
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/reaulexco_informationarchitecture.jpg" alt="Reaulex Co Information Architecture">
+                    <!--<p class="author">- AUTHOR NAME</p>-->
+                </div>
+                <!-- Add more carousel items here -->
+            </div>
+            <div class="carousel-controls">
+                <span class="prev" onclick="changeSlide(-1)"><img src="assets/left-arrow.png" style="width: 30px"></span>
+                <span class="next" onclick="changeSlide(1)"><img src="assets/right-arrow2.png" style="width: 30px"></span>
+            </div>
+          </div>
+        
+        </div>
+     </div>  
+    </main> 
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          let currentIndex = 0;
+          const items = document.querySelectorAll('.carousel-item');
+          const totalItems = items.length;
+        
+          const updateCarousel = () => {
+            items.forEach((item, index) => {
+              item.classList.toggle('active', index === currentIndex);
+            });
+          };
+        
+          document.querySelector('.prev').addEventListener('click', () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalItems - 1;
+            updateCarousel();
+          });
+        
+          document.querySelector('.next').addEventListener('click', () => {
+            currentIndex = (currentIndex < totalItems - 1) ? currentIndex + 1 : 0;
+            updateCarousel();
+          });
+        
+          updateCarousel();
+        });
+        </script>
+
+</body>
+
+<!--Footer Section-->
+<footer>
+    <div class="container" id="footer">
+        <ul>
+          <li><p class="footercopy" style="font-size: 0.8em;">COPYRIGHT DIANE ADOTE | 2024</p></li>  
+          <li><a class="linkedin" href="https://www.linkedin.com/in/diane-adote-a9b074156" target="_blank" rel="noreferrer">
+                <img src="assets/linkedinlogoicon.svg" alt="linkedin logo"></a></li>
+        </ul>
+    </div>
+</footer>
+<!--Footer Section Ends-->
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+    crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script> var scroll = new SmoothScroll('a[href*="#"]', { speed: 700 }); </script>
+
+<script src="scripts.js"></script>
+
+</html>
