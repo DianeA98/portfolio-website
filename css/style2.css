@@ -311,6 +311,8 @@ video {
 /* Projects */
 .hero-img{
   width: 100%;
+  height: 200px;
+  display: inline-block;
   background-size: cover;
   margin-top: -35px;
 }
@@ -666,6 +668,13 @@ Small devices (600px and smaller)
     color: #000;
   }
   
+  nav{
+    margin-top: -5px;
+  }
+  
+  .navtoggle li .icon{
+    margin-top: 5px;
+  }
 
   #skills-tools {
     margin-bottom: 20px;

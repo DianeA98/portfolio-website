@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
     <link href="assets/favicon.png" rel="icon" media="(prefers-color-scheme: light)">
     <link href="assets/favicon_darkmode.png" rel="icon" media="(prefers-color-scheme: dark)">
-    <title>Black Media Society</title>
+    <title>HER</title>
     <script src="https://kit.fontawesome.com/ea23a61ece.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
@@ -36,32 +36,31 @@
 
     <main>
      <div id="work">
-        <div class="hero-img"><img src="assets/bmsb.jpg"></div>
+        <div class="hero-img"><img src="assets/hercover.jpg"></div>
         <div class="container">
           <div class="row">
            <div class="col-lg-5">
-             <h2 class="pj-title" style="text-align: left;"><span class="italic">B</span>lack <span class="italic">M</span>edia <span class="italic">S</span>ociety</h2>
+             <h2 class="pj-title" style="text-align: left;">HER <span class="italic">W</span>ebsite</h2>
            </div>
            <div class="col-lg-7">
             <p>
-                This was a senior capstone project about the importance of Black representation in the media and
-                how it affects one's self-love/self-esteem. The project focuses on colorism in the media.
-                For the proposed solution, I created an organization called the Black Media Society which
-                targets on changing Black media representation positively. One of the ways of doing that
-                is organizing a panel where members can create conversations about the problems that Black
-                people face in the media. I used HTML/CSS to create a website for the event.
+                A responsive and fan-based website, this was a class project and the prompt was
+                to create a multi-page website of any subject of our choice. I chose an artist
+                who already has a website, so I challenged myself to redesign the website to how
+                I believe would have worked better. This website is for anyone that would like
+                to know more about the artist, listen to her latest music and view her pictures.
             </p>
             <br>
             <div class="col-sm-2" id="type">
                 <h3>M<span class="italic">y role</span></h3>
                     <ul>
-                        <li>Branding | Web-design</li>
+                        <li> Web-design</li>
                     </ul>
             </div>
             <div class="col-sm-2" id="tools">
                     <h3>T<span class="italic">ools I use</span></h3>
                     <ul>
-                        <li> Illustrator | Dreamweaver</li>
+                        <li> Photoshop | Brackets</li>
                     </ul>
             </div>
            </div>
@@ -76,15 +75,23 @@
               </div>
             <div class="carousel">
                 <div class="carousel-item active">
-                    <img src="assets/bsm_hp.png" alt="Black Media Society Homepage">
+                    <img src="assets/her_hp.png" alt="HER homepage">
                     <!--<p class="author">- TEODORO N.</p>-->
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/bsm_colorism.png" alt="Black Media Society Colorism page">
+                    <img src="assets/her_about.png" alt="HER about page">
                     <!--<p class="author">- AUTHOR NAME</p>-->
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/bsm_about.png" alt="Black Media Society About page">
+                    <img src="assets/her_tourdates.png" alt="HER tour dates page">
+                    <!--<p class="author">- AUTHOR NAME</p>-->
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/her_music.png" alt="HER music page">
+                    <!--<p class="author">- AUTHOR NAME</p>-->
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/her_gallery.png" alt="HER gallery page">
                     <!--<p class="author">- AUTHOR NAME</p>-->
                 </div>
             </div>
@@ -96,8 +103,32 @@
         </div>
      </div>  
     </main> 
-    
-    <script src="scripts.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          let currentIndex = 0;
+          const items = document.querySelectorAll('.carousel-item');
+          const totalItems = items.length;
+        
+          const updateCarousel = () => {
+            items.forEach((item, index) => {
+              item.classList.toggle('active', index === currentIndex);
+            });
+          };
+        
+          document.querySelector('.prev').addEventListener('click', () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalItems - 1;
+            updateCarousel();
+          });
+        
+          document.querySelector('.next').addEventListener('click', () => {
+            currentIndex = (currentIndex < totalItems - 1) ? currentIndex + 1 : 0;
+            updateCarousel();
+          });
+        
+          updateCarousel();
+        });
+    </script>
 
 </body>
 
@@ -118,5 +149,7 @@
     crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
     <script> var scroll = new SmoothScroll('a[href*="#"]', { speed: 700 }); </script>
+
+ <script src="scripts.js"></script>
 
 </html>

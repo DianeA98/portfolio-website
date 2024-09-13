@@ -61,7 +61,7 @@
             <div class="col-sm-2" id="tools">
                     <h3>T<span class="italic">ools I use</span></h3>
                     <ul>
-                        <li> Illustrator | Dreamweaver</li>
+                        <li> Illustrator | Brackets</li>
                     </ul>
             </div>
            </div>
@@ -76,15 +76,15 @@
               </div>
             <div class="carousel">
                 <div class="carousel-item active">
-                    <img src="assets/bsm_hp.png" alt="Black Media Society Homepage">
+                    <img src="assets/bms_hp.png" alt="Black Media Society Homepage">
                     <!--<p class="author">- TEODORO N.</p>-->
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/bsm_colorism.png" alt="Black Media Society Colorism page">
+                    <img src="assets/bms_colorism.png" alt="Black Media Society Colorism page">
                     <!--<p class="author">- AUTHOR NAME</p>-->
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/bsm_about.png" alt="Black Media Society About page">
+                    <img src="assets/bms_about.png" alt="Black Media Society About page">
                     <!--<p class="author">- AUTHOR NAME</p>-->
                 </div>
             </div>
@@ -97,7 +97,31 @@
      </div>  
     </main> 
     
-    <script src="scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          let currentIndex = 0;
+          const items = document.querySelectorAll('.carousel-item');
+          const totalItems = items.length;
+        
+          const updateCarousel = () => {
+            items.forEach((item, index) => {
+              item.classList.toggle('active', index === currentIndex);
+            });
+          };
+        
+          document.querySelector('.prev').addEventListener('click', () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalItems - 1;
+            updateCarousel();
+          });
+        
+          document.querySelector('.next').addEventListener('click', () => {
+            currentIndex = (currentIndex < totalItems - 1) ? currentIndex + 1 : 0;
+            updateCarousel();
+          });
+        
+          updateCarousel();
+        });
+    </script>
 
 </body>
 
@@ -117,6 +141,8 @@
     integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
     crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
-    <script> var scroll = new SmoothScroll('a[href*="#"]', { speed: 700 }); </script>
+    <script> var scroll = new SmoothScroll('a[href*="#"]', { speed: 700 });</script>
+
+<script src="scripts.js"></script>
 
 </html>
