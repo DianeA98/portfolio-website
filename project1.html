@@ -36,7 +36,7 @@
 
     <main>
      <div id="work">
-        <div class="hero-img"><img src="assets/bd-emails.png"></div>
+        <div class="hero-img"><img src="assets/bd.png"></div>
         <div class="container">
           <div class="row">
            <div class="col-lg-5">
@@ -66,9 +66,79 @@
             </div>
            </div>
           </div>
+
+          <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item active">
+                    <img src="assets/bd_hpmockup1.png" alt="Ballard Designs Homepage Mockup">
+                    <!--<p class="author">- AUTHOR NAME</p>-->
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/bd_hpmockup2.png" alt="Ballard Designs Homepage Mockup">
+                    <!--<p class="author">- AUTHOR NAME</p>-->
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/bd_emails1.gif" alt="Ballard Designs Emails">
+                    <!--<p class="author">- AUTHOR NAME</p>-->
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/bd_emails2.gif" alt="Ballard Designs Emails2">
+                    <!--<p class="author">- AUTHOR NAME</p>-->
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/bd_emails3.gif" alt="Ballard Designs Emails3">
+                    <!--<p class="author">- AUTHOR NAME</p>-->
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/bd_emails4.gif" alt="Ballard Designs Emails4">
+                    <!--<p class="author">- AUTHOR NAME</p>-->
+                </div>
+                <div class="carousel-item">
+                    <video controls autoplay src="assets/bd_email-social.mp4" alt="Ballard Designs Email and Social Campaign"></video>
+                    <!--<p class="author">- AUTHOR NAME</p>-->
+                </div>
+                <div class="carousel-item">
+                    <video controls autoplay src="assets/bd_email-social2.mp4" alt="Ballard Designs Email and Social Campaign"></video>
+                    <!--<p class="author">- AUTHOR NAME</p>-->
+                </div>
+                <!-- Add more carousel items here -->
+            </div>
+            <div class="carousel-controls">
+                <span class="prev" onclick="changeSlide(-1)"><img src="assets/left-arrow.png" style="width: 30px"></span>
+                <span class="next" onclick="changeSlide(1)"><img src="assets/right-arrow2.png" style="width: 30px"></span>
+            </div>
+          </div> 
+
         </div>
      </div>  
     </main>   
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          let currentIndex = 0;
+          const items = document.querySelectorAll('.carousel-item');
+          const totalItems = items.length;
+        
+          const updateCarousel = () => {
+            items.forEach((item, index) => {
+              item.classList.toggle('active', index === currentIndex);
+            });
+          };
+        
+          document.querySelector('.prev').addEventListener('click', () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalItems - 1;
+            updateCarousel();
+          });
+        
+          document.querySelector('.next').addEventListener('click', () => {
+            currentIndex = (currentIndex < totalItems - 1) ? currentIndex + 1 : 0;
+            updateCarousel();
+          });
+        
+          updateCarousel();
+        });
+        </script>
+
 </body>
 
 <!--Footer Section-->
@@ -89,6 +159,6 @@
     <script src="js/scripts.js"></script>
     <script> var scroll = new SmoothScroll('a[href*="#"]', { speed: 700 }); </script>
 
-<script src="js/scripts.js"></script>
+<script src="scripts.js"></script>
 
 </html>
