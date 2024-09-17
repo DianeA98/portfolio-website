@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
@@ -20,7 +20,7 @@
     <header>
         <div class="container"> 
             <div class="navtoggle" id="myNavtoggle">
-            <a href="index2.html" class="logo">
+            <a href="index.html" class="logo">
             <img src="assets/portfolio-image.svg" style="max-width: 155px;" alt="logo"> 
             </a>
             <nav>
@@ -39,16 +39,16 @@
         <div class="hero-img"><img src="assets/tyguysemer_hp2_1200.jpg" alt="Ty Guys Emergency Roadside Image"></div>
         <div class="container">
           <div class="row">
-           <div class="col-lg-5">
-             <h2 class="pj-title" style="text-align: left;"><span class="italic">T</span>Y <span class="italic">G</span>uys <span class="italic">E</span>mergency <span class="italic">R</span>oadside</h2>
+           <div class="col-lg-5"> 
+             <h2 class="pj-title" style="text-align: left;">TY G<span class="italic">uys</span> E<span class="italic">mergency</span> R<span class="italic">oadside</span></h2>
            </div>
            <div class="col-lg-7">
             <p>
                 I developed a one-page website for a new roadside emergency service business to showcase their work, 
                 highlight their services, and provide easy client contact options. By analyzing competitor websites, 
                 I identified effective design trends and incorporated features such as a sticky banner for the phone 
-                number and a section detailing the reliability of the services. The website&apos;s straightforward, 
-                user-friendly design reflects common practices in the industry, aimed at delivering essential information efficiently.
+                number and a section detailing the reliability of the services. The website&apos;s straightforward and
+                user-friendly design reflects common practices in the industry that&apos;s aimed at delivering essential information efficiently.
             </p>
             <br>
             <div class="col-sm-2" id="type">
@@ -73,20 +73,52 @@
                    <div class="dot"></div>
                    <div class="dot"></div>
                 </div>
-              </div>
-            <div class="carousel" style=" height: 400px;">
+            </div>
+            <div class="carousel">
                 <div class="carousel-item active">
                     <video controls autoplay src="assets/tyguysemer-video.mov" alt="Ty Guys Emergency Roadside Video"></video>
                     <!--<p class="author">- TEODORO N.</p>-->
                 </div>
+                <div class="carousel-item">
+                    <img src="assets/tyguysemer-wireframes.jpg" alt="Ty Guys Emergency Roadside Low-fi mockups">
+                    <!--<p class="author">- AUTHOR NAME</p>-->
+                </div>
+            </div>
+            <div class="carousel-controls" style="top: 60%;">
+                <span class="prev" onclick="changeSlide(-1)"><img src="assets/left-arrow.png" style="width: 30px"></span>
+                <span class="next" onclick="changeSlide(1)"><img src="assets/right-arrow2.png" style="width: 30px"></span>
             </div>
           </div>
 
         </div>
      </div>  
     </main> 
-    
-    <script src="scripts.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          let currentIndex = 0;
+          const items = document.querySelectorAll('.carousel-item');
+          const totalItems = items.length;
+        
+          const updateCarousel = () => {
+            items.forEach((item, index) => {
+              item.classList.toggle('active', index === currentIndex);
+            });
+          };
+        
+          document.querySelector('.prev').addEventListener('click', () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalItems - 1;
+            updateCarousel();
+          });
+        
+          document.querySelector('.next').addEventListener('click', () => {
+            currentIndex = (currentIndex < totalItems - 1) ? currentIndex + 1 : 0;
+            updateCarousel();
+          });
+        
+          updateCarousel();
+        });
+    </script>
 
 </body>
 
@@ -107,5 +139,6 @@
     crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
     <script> var scroll = new SmoothScroll('a[href*="#"]', { speed: 700 }); </script>
+    <script src="scripts.js"></script>
 
 </html>
