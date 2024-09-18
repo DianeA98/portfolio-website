@@ -594,7 +594,7 @@ ul{
 /* ==============================
 Small devices (600px and smaller)
 ================================= */
-@media only screen and (max-width:640px){
+@media only screen and (max-width:600px){
   .container {
     padding: 0 30px;
   }
@@ -606,7 +606,7 @@ Small devices (600px and smaller)
   #hero h1 {
     text-align: left;
     font-size: 3em;
-    margin: 20px 0 10px 0;
+    margin: 80px 0 10px 0;
   }
 
   #hero h3 {
@@ -622,9 +622,9 @@ Small devices (600px and smaller)
   .square {
     /*position:;*/
     width: 70%;
-    margin-top: -440px;
-    height: 26.5em;
-    margin-bottom: 40px;
+    margin-top: -450px;
+    height: 28em;
+    margin-bottom: 80px;
   }
 
   #button-about{
@@ -730,7 +730,7 @@ Small devices (600px and smaller)
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 600px) {
   .container {
     padding: 0 60px;
   }
