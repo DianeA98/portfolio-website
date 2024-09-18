@@ -641,6 +641,19 @@ Small devices (600px and smaller)
     margin: auto;
   }
 
+  .circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -9em;
+    left: -1.3em;
+    margin-bottom: -11em;
+  }
+
   .grid-container {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
